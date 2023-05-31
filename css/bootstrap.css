@@ -407,8 +407,11 @@ small {
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto
+    /* max-width: 100%; */
+    /* height: auto */
+    /* this is more creative but less professional */
+    max-width: 500px;
+    height: 400px;
 }
 
 .figure {
