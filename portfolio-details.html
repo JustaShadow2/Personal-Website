@@ -17,7 +17,8 @@
       </button>
       <nav class="nav" id="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a class="is-active" href="portfolio.html">Work</a>
+        <a href="portfolio.html#experience">Experience</a>
+        <a class="is-active" href="portfolio.html#projects">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -34,20 +35,6 @@
     </section>
 
     <section class="section">
-      <div class="container split">
-        <div class="split__media reveal">
-          <img src="img/projectimg/pokequant.jpg" alt="PokeQuant visual">
-        </div>
-        <div class="split__copy reveal">
-          <p class="eyebrow">Overview</p>
-          <h2>Market signal, not marketplace noise.</h2>
-          <p>PokeQuant tracks Scarlet &amp; Violet–era cards and sealed product across TCGPlayer and eBay, then layers ML fair-value predictions on top of nightly snapshot pipelines.</p>
-          <p>The goal is simple: tell collectors and traders when a card looks undervalued, overvalued, or fairly priced — with confidence intervals and grading ROI attached.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="container">
         <div class="project-detail reveal">
           <h3>What shipped</h3>
@@ -58,11 +45,18 @@
             <li>Demand scoring as a 0–10 composite from search interest and 14-day / 30-day price momentum, filterable and rankable in the UI.</li>
             <li>PSA 10 grading ROI computed as smart graded price divided by raw eBay price, with confidence tied to sold-listing sample size.</li>
             <li>Snapshot data model for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned model_predictions to keep nightly refreshes reproducible.</li>
-            <li>Leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by cultural/premium metrics and 30-day movement; sealed booster boxes, ETBs, and packs by price and change.</li>
+            <li>Leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by premium metrics and 30-day movement; sealed booster boxes, ETBs, and packs by price and change.</li>
           </ul>
-          <p class="tech_line"><strong>Stack:</strong> Next.js · TypeScript · Supabase / Postgres · time-series ingestion · ML fair-value models · analytics UI</p>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>TypeScript</span><span>JavaScript</span><span>SQL</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Next.js</span><span>React</span>
+            <p class="keywords__label">Tools &amp; Systems</p>
+            <span>Supabase / Postgres</span><span>Time-series ingestion</span><span>ML fair-value models</span><span>TCGPlayer</span><span>eBay data</span>
+          </div>
           <div class="btn-row" style="margin-top:1.75rem">
-            <a class="btn btn-primary" href="portfolio.html">Back to work</a>
+            <a class="btn btn-primary" href="portfolio.html#projects">All projects</a>
             <a class="btn btn-ghost" href="contact.html">Contact</a>
           </div>
         </div>
@@ -73,7 +67,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p>© <span data-year></span> Arjun Atwal</p>
-      <a href="portfolio.html">Work</a>
+      <a href="portfolio.html#projects">Projects</a>
     </div>
   </footer>
 

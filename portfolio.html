@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <title>Work — Arjun Atwal</title>
-  <meta name="description" content="Selected experience and projects by Arjun Atwal — Kouano, PokeQuant, and internship work.">
+  <meta name="description" content="Experience and projects by Arjun Atwal — Kouano, PokeQuant, and selected GitHub work.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +17,8 @@
       </button>
       <nav class="nav" id="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a class="is-active" href="portfolio.html">Work</a>
+        <a href="portfolio.html#experience">Experience</a>
+        <a class="is-active" href="portfolio.html#projects">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -28,8 +29,12 @@
       <div class="page-hero__orb" aria-hidden="true"></div>
       <div class="container reveal">
         <p class="eyebrow">Selected work</p>
-        <h1>Systems, products, and experiments.</h1>
-        <p>Internship delivery first, then the platforms I designed and shipped myself.</p>
+        <h1>Experience and projects.</h1>
+        <p>Internship delivery first. Then the projects that show how the work got sharper over time.</p>
+        <div class="btn-row" style="margin-top:1.5rem">
+          <a class="btn btn-primary" href="#experience">Experience</a>
+          <a class="btn btn-ghost" href="#projects">Projects</a>
+        </div>
       </div>
     </section>
 
@@ -38,25 +43,29 @@
         <div class="section__head reveal">
           <p class="eyebrow">Experience</p>
           <h2>Where the craft got serious.</h2>
-          <p>Heavy focus on Kouano and the roles that built the foundation underneath it.</p>
+          <p>Resume roles plus Kouano — listed with the technical depth behind each one.</p>
         </div>
 
         <div class="timeline">
           <article class="job job--featured reveal">
-            <p class="job__when">2026 – Present</p>
+            <p class="job__when">May 2026 – Present</p>
             <div class="job__body">
               <h3>Kouano</h3>
-              <p class="job__role">Founder &amp; Software Engineer</p>
+              <p class="job__role">AI Engineer Intern · Calgary</p>
               <ul>
-                <li>Designed and shipped an open-weight music generation platform end-to-end: marketing site, creator studio, and a public REST API that shares one inference engine.</li>
-                <li>Built the ACE-Step DiT serving stack with a model registry (turbo / SFT / base + 0.6B lyric LM), FP8 weight-only quantization, compiled kernels, concurrency/queue controls, and health/readiness reporting.</li>
-                <li>Implemented compose generation with prompt + optional lyrics (null triggers CoT lyric writing), instrumental mode, duration up to 4 minutes, CFG/steps controls, and seed-reproducible multi-take output.</li>
+                <li>Built and shipped an open-weight music generation platform end-to-end: creator studio UI, marketing surface, and a public REST API sharing one inference engine.</li>
+                <li>Implemented the ACE-Step DiT serving stack with a model registry (turbo / SFT / base + 0.6B lyric LM), FP8 weight-only quantization, compiled kernels, concurrency/queue controls, and health/readiness reporting.</li>
+                <li>Shipped compose generation with prompt + optional lyrics (null triggers CoT lyric writing), instrumental mode, duration up to 4 minutes, CFG/steps controls, and seed-reproducible multi-take output.</li>
                 <li>Engineered a best-of-N CLAP quality gate that over-generates takes, scores and reranks them, discards weak variants, and returns winners with CLAP scores, LUFS, timings, and SLA flags.</li>
                 <li>Added a lyric integrity loop with optional ASR verification so vocal takes actually sing the provided lyrics before they pass the gate.</li>
                 <li>Shipped M2 editing complexity: cover/remix, time-bounded section repaint with latent and WAV crossfades, worker extend, and multi-hop async orchestrated extend with overlap stitching so tracks truly lengthen.</li>
                 <li>Integrated multi-engine stem separation (MelBand-RoFormer / BS-RoFormer with Demucs fallback), instrumental stem fetch, and Studio stems.zip export for vocals, drums, bass, synths, FX, and master.</li>
                 <li>Built provenance and ownership primitives: per-track records of models, settings, and exact seeds; inaudible watermark; commercial-ready MP3/WAV export; open-weight self-host path so prompts stay private.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>Python</span><span>REST / OpenAPI</span><span>ACE-Step</span><span>DiT</span><span>CLAP</span><span>ASR</span><span>RoFormer</span><span>Demucs</span><span>Web Audio</span><span>React</span><span>GPU Inference</span><span>FP8</span><span>Async Jobs</span>
+              </div>
             </div>
           </article>
 
@@ -70,6 +79,10 @@
                 <li>Built a high-fidelity Interac bulk payment stub simulating async ACK/report/response workflows, collapsing multi-minute external latency to near-instant local execution.</li>
                 <li>Integrated regression suites into GitHub Actions for continuous commit-level confidence.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>Java</span><span>Karate</span><span>API Testing</span><span>GitHub Actions</span><span>Interac</span><span>Payments</span><span>CI/CD</span>
+              </div>
             </div>
           </article>
 
@@ -83,6 +96,10 @@
                 <li>Optimized backend services and SQL for efficient production data retrieval.</li>
                 <li>Integrated ML pipelines from preprocessing through evaluation into deployment paths.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>Laravel</span><span>PHP</span><span>REST APIs</span><span>SQL</span><span>Python</span><span>Machine Learning</span><span>Testing</span>
+              </div>
             </div>
           </article>
 
@@ -95,6 +112,10 @@
                 <li>Automated a Python pipeline converting raw imagery into optimized tilesets for interactive maps.</li>
                 <li>Integrated Mapbox and AWS S3 to streamline geospatial upload, processing, and publishing.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>Python</span><span>Mapbox</span><span>AWS S3</span><span>Geospatial</span><span>Automation</span>
+              </div>
             </div>
           </article>
 
@@ -106,6 +127,10 @@
               <ul>
                 <li>Prototyped React UI components and contributed to end-to-end feature delivery.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>React</span><span>JavaScript</span><span>UI</span><span>Figma</span>
+              </div>
             </div>
           </article>
 
@@ -118,6 +143,10 @@
                 <li>Extended XML/XSLT pipelines for field officer reporting systems.</li>
                 <li>Built a Mapbox geospatial tool for real-time officer location tracking.</li>
               </ul>
+              <div class="keywords">
+                <p class="keywords__label">Keywords</p>
+                <span>XML</span><span>XSLT</span><span>Mapbox</span><span>JavaScript</span><span>Geospatial</span>
+              </div>
             </div>
           </article>
         </div>
@@ -128,91 +157,224 @@
       <div class="container">
         <div class="section__head reveal">
           <p class="eyebrow">Projects</p>
-          <h2>Things I shipped outside the internship loop.</h2>
-          <p>PokeQuant leads. Earlier hackathon and product work follows.</p>
+          <h2>Most impressive first. Started-date progression marked.</h2>
+          <p>Strongest systems up top. Each card includes when it started so the growth path stays visible.</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project project--wide reveal" id="pokequant">
-            <div class="project__media">
-              <img src="img/projectimg/pokequant.jpg" alt="PokeQuant project visual">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">Featured project</p>
-              <h3>PokeQuant</h3>
-              <p>Quantitative analytics for Pokemon TCG markets — fair value models, demand signals, grading ROI, and sealed-product tracking across TCGPlayer and eBay data.</p>
-              <div class="btn-row">
-                <a class="btn btn-primary" href="portfolio-details.html">Project details</a>
-              </div>
-            </div>
-          </article>
+        <nav class="project-jump reveal" aria-label="Project list">
+          <a href="#pokequant">PokeQuant</a>
+          <a href="#ai-chef">AI-Chef</a>
+          <a href="#trivia-trials">Trivia Trials</a>
+          <a href="#git-together">GitTogether</a>
+          <a href="#sudoku-solver">Sudoku Solver</a>
+          <a href="#study-squid">Study Squid</a>
+          <a href="#bon-voyage">Bon Voyage</a>
+          <a href="#roadmap-ai">roadmap.ai</a>
+          <a href="#myapply">myApply</a>
+        </nav>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/triviahome.png" alt="Trivia Trials">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">Game</p>
-              <h3><a href="https://github.com/JustaShadow2/Trivia-Trials" target="_blank" rel="noopener">Trivia Trials</a></h3>
-              <p>Interactive educational trivia experience built for fast rounds and replay.</p>
-            </div>
-          </article>
+        <article class="project-detail reveal" id="pokequant">
+          <div class="project-detail__head">
+            <h3>PokeQuant</h3>
+            <p class="project-detail__when">Started 2025 · Featured</p>
+          </div>
+          <p>Quantitative analytics for Pokemon TCG markets — fair value models, demand signals, grading ROI, and sealed-product intelligence across TCGPlayer and eBay data.</p>
+          <ul>
+            <li>Built multi-source price history across TCGPlayer market prices and eBay raw / PSA 9 / PSA 10 smart prices, plus volume views for TCGPlayer sales and 7-day PSA 10 eBay volume.</li>
+            <li>Implemented ML fair-value predictions per card with predicted price, 90% confidence interval, UNDERVALUED / FAIR VALUE / OVERVALUED signal, confidence tier, and ratio versus live market.</li>
+            <li>Engineered demand scoring as a 0–10 composite from search interest and 14-day / 30-day price momentum, filterable and rankable in the UI.</li>
+            <li>Computed PSA 10 grading ROI as smart graded price divided by raw eBay price, with confidence tied to sold-listing sample size.</li>
+            <li>Designed a snapshot data model for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned model_predictions to keep nightly refreshes reproducible.</li>
+            <li>Shipped leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by premium metrics and 30-day movement; sealed booster boxes, ETBs, and packs by price and change.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>TypeScript</span><span>JavaScript</span><span>SQL</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Next.js</span><span>React</span>
+            <p class="keywords__label">Tools &amp; Systems</p>
+            <span>Supabase / Postgres</span><span>Time-series ingestion</span><span>ML fair-value models</span><span>TCGPlayer</span><span>eBay data</span><span>Analytics UI</span>
+          </div>
+        </article>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/studysquid.jpg" alt="Study Squid">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">EdTech</p>
-              <h3><a href="https://devpost.com/software/study-squid" target="_blank" rel="noopener">Study Squid</a></h3>
-              <p>Study companion that turns difficult material into structured practice habits.</p>
-            </div>
-          </article>
+        <article class="project-detail reveal" id="ai-chef">
+          <div class="project-detail__head">
+            <h3>AI-Chef</h3>
+            <p class="project-detail__when">Started Nov 2024 · DataSci 3000</p>
+          </div>
+          <a class="project-detail__link" href="https://github.com/JustaShadow2/AI-Chef" target="_blank" rel="noopener">GitHub →</a>
+          <p>Final project for UWO DataSci 3000. Predicts a food Freshness Index with nonlinear regression, then uses that signal to generate recipes prioritized by what expires first.</p>
+          <ul>
+            <li>Fitted sigmoid decay models with SciPy <code>curve_fit</code> to map days → perceived freshness across observed spoil curves.</li>
+            <li>Compared steep vs non-steep nonlinear regression formulations and validated against held-out CSV test sets in a shared data schema.</li>
+            <li>Wired Freshness Index outputs into Groq-backed recipe generation so suggestions bias toward ingredients that expire soonest.</li>
+            <li>Packaged training/evaluation notebooks plus data-formatting utilities for reproducible experiments.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>Python</span>
+            <p class="keywords__label">Frameworks &amp; Libraries</p>
+            <span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Jupyter</span>
+            <p class="keywords__label">Tools</p>
+            <span>Groq API</span><span>Nonlinear regression</span><span>CSV pipelines</span>
+          </div>
+        </article>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/myapply.jpg" alt="myApply">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">Community</p>
-              <h3><a href="https://myapply-uajanth.vercel.app/" target="_blank" rel="noopener">myApply</a></h3>
-              <p>Mentorship matching for aspiring builders seeking industry guidance.</p>
-            </div>
-          </article>
+        <article class="project-detail reveal" id="trivia-trials">
+          <div class="project-detail__head">
+            <h3>Trivia Trials</h3>
+            <p class="project-detail__when">Started Apr 2024 · CS 2212</p>
+          </div>
+          <a class="project-detail__link" href="https://github.com/JustaShadow2/Trivia-Trials" target="_blank" rel="noopener">GitHub →</a>
+          <p>Board-based educational trivia game for CS 2212 — competitive scoring, multiplayer flow, instructor monitoring hooks, and MongoDB-backed persistence.</p>
+          <ul>
+            <li>Built the board gameplay loop in Python with pygame / pygame-gui: timed rounds, streak scoring, and progressive difficulty across the board.</li>
+            <li>Implemented question generation and query management modules with unit tests for core board and generation logic.</li>
+            <li>Integrated MongoDB for high scores, player profiles, save files, and developer/debug mode features.</li>
+            <li>Designed for classroom use with instructor visibility into learning progress and a maintainable debug surface for future contributors.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>Python</span>
+            <p class="keywords__label">Frameworks &amp; Libraries</p>
+            <span>pygame</span><span>pygame-gui</span><span>unittest</span>
+            <p class="keywords__label">Tools</p>
+            <span>MongoDB</span><span>Game design</span><span>Unit testing</span>
+          </div>
+        </article>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/bonvoyage.jpg" alt="Bon Voyage">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">Automation</p>
-              <h3><a href="https://devpost.com/software/adventure-explorer" target="_blank" rel="noopener">Bon Voyage</a></h3>
-              <p>Travel planning powered by scraping pipelines and AI assistance.</p>
-            </div>
-          </article>
+        <article class="project-detail reveal" id="git-together">
+          <div class="project-detail__head">
+            <h3>GitTogether</h3>
+            <p class="project-detail__when">Started Nov 2023 · Hack Western</p>
+          </div>
+          <a class="project-detail__link" href="https://github.com/JustaShadow2/Git-Together" target="_blank" rel="noopener">GitHub →</a>
+          <p>Hack Western 2023 full-stack matching platform connecting applicants and companies through profiles, code snippets, likes, and recruiter workflows.</p>
+          <ul>
+            <li>Built React frontend flows for auth, landing, account pages, code-snippet tagging, and recruiter matching views with React Router and MUI.</li>
+            <li>Implemented Flask backend endpoints for signup/login, company profiles, applicant profiles, likes, and logo/resume uploads.</li>
+            <li>Used MongoDB via PyMongo for profile and match state, with bcrypt password hashing and CORS-enabled API access.</li>
+            <li>Added email/notification integration hooks (Infobip) for outreach around matches and account events.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>JavaScript</span><span>Python</span><span>HTML/CSS</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>React</span><span>React Router</span><span>MUI</span><span>Flask</span>
+            <p class="keywords__label">Tools</p>
+            <span>MongoDB</span><span>PyMongo</span><span>bcrypt</span><span>Infobip</span><span>REST APIs</span>
+          </div>
+        </article>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/roadmapai.jpg" alt="roadmap.ai">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">NLP</p>
-              <h3><a href="https://devpost.com/software/roadmap-ai" target="_blank" rel="noopener">roadmap.ai</a></h3>
-              <p>GPT-powered task decomposition into concrete execution roadmaps.</p>
-            </div>
-          </article>
+        <article class="project-detail reveal" id="sudoku-solver">
+          <div class="project-detail__head">
+            <h3>Computer Vision Sudoku Solver</h3>
+            <p class="project-detail__when">Started Nov 2023</p>
+          </div>
+          <a class="project-detail__link" href="https://github.com/JustaShadow2/ComputerVision-SudokuSolver" target="_blank" rel="noopener">GitHub →</a>
+          <p>Vision pipeline that locates a Sudoku board in an image, reads digits with a trained OCR model, and solves the grid with backtracking.</p>
+          <ul>
+            <li>Used OpenCV for bilateral filtering, Canny edges, contour detection, and perspective warps to isolate the board.</li>
+            <li>Split boards into 81 normalized cells and classified digits with a Keras OCR model (<code>model-OCR.h5</code>).</li>
+            <li>Implemented constraint-validating backtracking solvers to fill the extracted board and map solutions back into image space.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>Python</span>
+            <p class="keywords__label">Frameworks &amp; Libraries</p>
+            <span>OpenCV</span><span>TensorFlow / Keras</span><span>NumPy</span><span>imutils</span>
+            <p class="keywords__label">Tools</p>
+            <span>OCR</span><span>Computer Vision</span><span>Backtracking</span>
+          </div>
+        </article>
 
-          <article class="project reveal">
-            <div class="project__media">
-              <img src="img/projectimg/logo_blue.png" alt="Ribbon financial calculator">
-            </div>
-            <div class="project__meta">
-              <p class="project__tag">Finance</p>
-              <h3><a href="https://www.getribbon.ai" target="_blank" rel="noopener">Financial Calculator</a></h3>
-              <p>Automation-focused calculator work contributed during the Ribbon internship.</p>
-            </div>
-          </article>
-        </div>
+        <article class="project-detail reveal" id="study-squid">
+          <div class="project-detail__head">
+            <h3>Study Squid</h3>
+            <p class="project-detail__when">Started Jan 2023 · QHacks</p>
+          </div>
+          <a class="project-detail__link" href="https://devpost.com/software/study-squid" target="_blank" rel="noopener">Devpost →</a>
+          <p>Study tool that generates unlimited practice problems across subjects, checks solutions in real time, and tracks progress with an XP/leveling system.</p>
+          <ul>
+            <li>Wrote Python generators for calculus and linear algebra problem sets, served through a Flask backend.</li>
+            <li>Integrated Wolfram for solution verification and step-style feedback into a vanilla HTML/JS frontend.</li>
+            <li>Added subject selection, multi-unit mixing for exam prep, and a leveling/XP loop to make practice sticky.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>Python</span><span>JavaScript</span><span>HTML/CSS</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Flask</span>
+            <p class="keywords__label">Tools</p>
+            <span>Wolfram API</span><span>Problem generation</span><span>Full-stack</span>
+          </div>
+        </article>
+
+        <article class="project-detail reveal" id="bon-voyage">
+          <div class="project-detail__head">
+            <h3>Bon Voyage</h3>
+            <p class="project-detail__when">Started Jan 2023 · UofTHacks</p>
+          </div>
+          <a class="project-detail__link" href="https://devpost.com/software/adventure-explorer" target="_blank" rel="noopener">Devpost →</a>
+          <p>Travel planner that combines destination inputs with Yelp attractions, Google Maps routing, and GPT-3 itineraries into one trip flow.</p>
+          <ul>
+            <li>Built a Flask + HTML/Bootstrap app that accepts origin/destination and returns a structured trip plan.</li>
+            <li>Parsed Yelp reviews to surface high-rated attractions and rendered routes with Google Maps, including flight-aware pathing experiments.</li>
+            <li>Generated custom 3-day itineraries with the GPT-3 API and stitched the three API surfaces into one end-to-end planner.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>Python</span><span>HTML/CSS</span><span>JavaScript</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Flask</span><span>Bootstrap</span>
+            <p class="keywords__label">Tools</p>
+            <span>GPT-3 API</span><span>Yelp API</span><span>Google Maps API</span>
+          </div>
+        </article>
+
+        <article class="project-detail reveal" id="roadmap-ai">
+          <div class="project-detail__head">
+            <h3>roadmap.ai</h3>
+            <p class="project-detail__when">Started Jan 2023 · DeltaHacks</p>
+          </div>
+          <a class="project-detail__link" href="https://devpost.com/software/roadmap-ai" target="_blank" rel="noopener">Devpost →</a>
+          <p>GPT-3 powered planner that turns a high-level objective into a concrete step-by-step roadmap.</p>
+          <ul>
+            <li>Integrated the GPT-3 API into a browser UI so users can enter a goal and receive ordered execution steps.</li>
+            <li>Worked through early JS ↔ API integration challenges around request handling and prompt formatting.</li>
+            <li>Scoped follow-on ideas for schedule generation and timetable assignment on top of the roadmap core.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>JavaScript</span><span>HTML/CSS</span><span>Python</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Node.js</span>
+            <p class="keywords__label">Tools</p>
+            <span>GPT-3 API</span><span>Prompting</span><span>NLP</span>
+          </div>
+        </article>
+
+        <article class="project-detail reveal" id="myapply">
+          <div class="project-detail__head">
+            <h3>myApply</h3>
+            <p class="project-detail__when">Started Nov 2022 · Hack Western</p>
+          </div>
+          <a class="project-detail__link" href="https://myapply-uajanth.vercel.app/" target="_blank" rel="noopener">Live demo →</a>
+          <p>Networking assistant that helps students reach recruiters at Canadian companies through targeted outreach flows.</p>
+          <ul>
+            <li>Built the Next.js frontend experience for browsing companies and recruiter contacts by field of study.</li>
+            <li>Implemented a Flask backend for sample data serving and SendGrid-powered mass email outreach.</li>
+            <li>Focused on first-year CS networking friction — turning cold outreach into a structured, repeatable workflow.</li>
+          </ul>
+          <div class="keywords">
+            <p class="keywords__label">Languages</p>
+            <span>JavaScript</span><span>Python</span>
+            <p class="keywords__label">Frameworks</p>
+            <span>Next.js</span><span>React</span><span>Flask</span><span>Chakra UI</span>
+            <p class="keywords__label">Tools</p>
+            <span>SendGrid</span><span>Vercel</span><span>REST APIs</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>
