@@ -1,380 +1,229 @@
 <!doctype html>
 <html lang="en">
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="img/favicon.png" type="image/png">
-<title>Portfolio</title>
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="vendors/linericon/style.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Work — Arjun Atwal</title>
+  <meta name="description" content="Selected experience and projects by Arjun Atwal — Kouano, PokeQuant, and internship work.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Arjun <span>Atwal</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a class="is-active" href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="header_area">
-<div class="main_menu">
-<nav class="navbar navbar-expand-lg navbar-light">
-<div class="container">
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__orb" aria-hidden="true"></div>
+      <div class="container reveal">
+        <p class="eyebrow">Selected work</p>
+        <h1>Systems, products, and experiments.</h1>
+        <p>Internship delivery first, then the platforms I designed and shipped myself.</p>
+      </div>
+    </section>
 
-<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" height="50px"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Where the craft got serious.</h2>
+          <p>Heavy focus on Kouano and the roles that built the foundation underneath it.</p>
+        </div>
 
-<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-<ul class="nav navbar-nav menu_nav justify-content-end">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</div>
-</header>
+        <div class="timeline">
+          <article class="job job--featured reveal">
+            <p class="job__when">2026 – Present</p>
+            <div class="job__body">
+              <h3>Kouano</h3>
+              <p class="job__role">Founder &amp; Software Engineer</p>
+              <ul>
+                <li>Designed and shipped an open-weight music generation platform end-to-end: marketing site, creator studio, and a public REST API that shares one inference engine.</li>
+                <li>Built the ACE-Step DiT serving stack with a model registry (turbo / SFT / base + 0.6B lyric LM), FP8 weight-only quantization, compiled kernels, concurrency/queue controls, and health/readiness reporting.</li>
+                <li>Implemented compose generation with prompt + optional lyrics (null triggers CoT lyric writing), instrumental mode, duration up to 4 minutes, CFG/steps controls, and seed-reproducible multi-take output.</li>
+                <li>Engineered a best-of-N CLAP quality gate that over-generates takes, scores and reranks them, discards weak variants, and returns winners with CLAP scores, LUFS, timings, and SLA flags.</li>
+                <li>Added a lyric integrity loop with optional ASR verification so vocal takes actually sing the provided lyrics before they pass the gate.</li>
+                <li>Shipped M2 editing complexity: cover/remix, time-bounded section repaint with latent and WAV crossfades, worker extend, and multi-hop async orchestrated extend with overlap stitching so tracks truly lengthen.</li>
+                <li>Integrated multi-engine stem separation (MelBand-RoFormer / BS-RoFormer with Demucs fallback), instrumental stem fetch, and Studio stems.zip export for vocals, drums, bass, synths, FX, and master.</li>
+                <li>Built provenance and ownership primitives: per-track records of models, settings, and exact seeds; inaudible watermark; commercial-ready MP3/WAV export; open-weight self-host path so prompts stay private.</li>
+              </ul>
+            </div>
+          </article>
 
+          <article class="job reveal">
+            <p class="job__when">Jan 2026 – May 2026</p>
+            <div class="job__body">
+              <h3>Royal Bank of Canada</h3>
+              <p class="job__role">Software Engineer Intern · Toronto</p>
+              <ul>
+                <li>Designed a scalable automated testing framework for global remittance payment systems across 12 APIs, removing manual pre-production validation.</li>
+                <li>Built a high-fidelity Interac bulk payment stub simulating async ACK/report/response workflows, collapsing multi-minute external latency to near-instant local execution.</li>
+                <li>Integrated regression suites into GitHub Actions for continuous commit-level confidence.</li>
+              </ul>
+            </div>
+          </article>
 
-<section class="banner_area">
-<div class="banner_inner d-flex align-items-center">
-<div class="container">
-<div class="banner_content text-center">
-<h2>Portfolio</h2>
-<div class="page_link">
-<a href="index.html">Home</a>
-<a href="portfolio.html">Portfolio</a>
-</div>
-</div>
-</div>
-</div>
-</section>
+          <article class="job reveal">
+            <p class="job__when">May 2025 – Oct 2025</p>
+            <div class="job__body">
+              <h3>BioAro</h3>
+              <p class="job__role">Software Engineer Intern · Calgary</p>
+              <ul>
+                <li>Shipped full-stack Laravel and REST features across core production workflows.</li>
+                <li>Optimized backend services and SQL for efficient production data retrieval.</li>
+                <li>Integrated ML pipelines from preprocessing through evaluation into deployment paths.</li>
+              </ul>
+            </div>
+          </article>
 
-<section class="experience_area section_gap_top" id="experience">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="main_title text-left">
-<h2>Featured experience — Kouano</h2>
-<p>
-Open-weight, self-hosted, API-first music generation. Everything below is what I designed and engineered — product UI, inference API, quality gating, editing, stems, and provenance. Private beta.
-</p>
-</div>
-</div>
-</div>
+          <article class="job reveal">
+            <p class="job__when">May 2024 – Sep 2024</p>
+            <div class="job__body">
+              <h3>SteepDeep</h3>
+              <p class="job__role">Software Engineer Intern · Toronto</p>
+              <ul>
+                <li>Automated a Python pipeline converting raw imagery into optimized tilesets for interactive maps.</li>
+                <li>Integrated Mapbox and AWS S3 to streamline geospatial upload, processing, and publishing.</li>
+              </ul>
+            </div>
+          </article>
 
-<article class="experience_item highlight kouano_detail">
-<div class="experience_meta">
-<h3>Founder &amp; Software Engineer — Kouano</h3>
-<span class="experience_when">2026 – Present · Generative Audio / Full-Stack AI</span>
-</div>
+          <article class="job reveal">
+            <p class="job__when">Jan 2024 – May 2024</p>
+            <div class="job__body">
+              <h3>Ribbon Business</h3>
+              <p class="job__role">Software Engineer Intern · Toronto</p>
+              <ul>
+                <li>Prototyped React UI components and contributed to end-to-end feature delivery.</li>
+              </ul>
+            </div>
+          </article>
 
-<div class="row">
-<div class="col-lg-5 mb-4">
-<a href="img/uncroppedprojectimg/uncropped-kouano.jpg" class="img-gal">
-<img class="img-fluid w-100 kouano_img" src="img/projectimg/kouano.jpg" alt="Kouano music generation platform">
-</a>
-</div>
-<div class="col-lg-7">
-<p class="experience_summary">
-Kouano turns a text prompt (and optional lyrics) into finished, mastered songs — then lets creators edit, extend, separate stems, and export, while exposing the same engine as a public REST API for developers who want to self-host open weights.
-</p>
-<h4 class="detail_heading">What I built (product)</h4>
-<ul>
-<li>End-to-end creator loop: Create → Generating → Result → Editor, with dual-take comparison, Web Audio players, non-destructive version history, download (MP3/WAV), share, and “How this was made” provenance UI.</li>
-<li>Marketing + app + developer surface on one design system: persona toggle (creators / developers), pricing tiers, FAQ, trust/privacy messaging, light/dark, responsive, AA-minded contrast and reduced-motion support.</li>
-<li>Smart defaults for time-to-first-song: single prompt, Surprise-me + examples, Advanced panel for seed / steps / guidance / Studio tier.</li>
-</ul>
-</div>
-</div>
+          <article class="job reveal">
+            <p class="job__when">May 2023 – Sep 2023</p>
+            <div class="job__body">
+              <h3>Government of Ontario</h3>
+              <p class="job__role">Software Engineer Intern · Mississauga</p>
+              <ul>
+                <li>Extended XML/XSLT pipelines for field officer reporting systems.</li>
+                <li>Built a Mapbox geospatial tool for real-time officer location tracking.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h4 class="detail_heading">What I built (systems &amp; ML infra)</h4>
-<ul>
-<li><strong>ACE-Step DiT serving stack</strong> with model registry (turbo / SFT / base DiT variants + 0.6B lyric LM), health/readiness reporting, local song storage backend, and production-oriented perf knobs (FP8 weight-only DiT quantization, compiled DiT, concurrency + queue limits).</li>
-<li><strong>Compose pipeline</strong> (<code>POST /v1/compose</code>): free-text prompt, optional lyrics (null → model writes lyrics via CoT), instrumental flag, duration up to 4 minutes on Turbo, CFG + denoising steps, seed-reproducible multi-take generation.</li>
-<li><strong>CLAP best-of-N quality gate</strong>: generate <code>n + overgenerate</code> takes, score/rerank, discard losers, return winners with CLAP scores, timings, LUFS, and SLA flags — surfaced in-product as “we kept your best takes.”</li>
-<li><strong>Lyric integrity loop</strong>: optional ASR verification so takes actually sing provided lyrics; regenerate until the gate’s quota of valid vocal takes is met.</li>
-<li><strong>M2 editing API</strong>: cover/remix, time-bounded section repaint (latent + WAV crossfades, strength/strategy controls), worker extend, and multi-hop orchestrated extend (async jobs with overlap stitching so tracks truly lengthen).</li>
-<li><strong>Stem separation</strong>: MelBand-RoFormer / BS-RoFormer primary engines with Demucs fallback; per-stem fetch, instrumental stem, and Studio stems.zip for vocals/drums/bass/synths/FX/master.</li>
-<li><strong>Provenance &amp; ownership</strong>: per-track record of models, settings, and exact seeds; inaudible watermark; commercial-ready exports; open-weight self-host path so prompts stay private and never become training data.</li>
-<li><strong>Developer API surface</strong>: OpenAPI-documented REST (sync generate + compose, streaming-oriented design, stems + provenance endpoints) — same engine as the app, intended for product embedding and on-prem GPUs / white-label.</li>
-</ul>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I shipped outside the internship loop.</h2>
+          <p>PokeQuant leads. Earlier hackathon and product work follows.</p>
+        </div>
 
-<p class="tech_line"><strong>Stack highlights:</strong> ACE-Step DiT + lyric LM · CLAP reranking · RoFormer/Demucs separation · FastAPI-style REST/OpenAPI · Web Audio · React design-component UI · GPU inference (FP8, compiled) · async job orchestration</p>
-</article>
-</div>
-</section>
+        <div class="project-grid">
+          <article class="project project--wide reveal" id="pokequant">
+            <div class="project__media">
+              <img src="img/projectimg/pokequant.jpg" alt="PokeQuant project visual">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">Featured project</p>
+              <h3>PokeQuant</h3>
+              <p>Quantitative analytics for Pokemon TCG markets — fair value models, demand signals, grading ROI, and sealed-product tracking across TCGPlayer and eBay data.</p>
+              <div class="btn-row">
+                <a class="btn btn-primary" href="portfolio-details.html">Project details</a>
+              </div>
+            </div>
+          </article>
 
-<section class="portfolio_area" id="portfolio">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="main_title text-left">
-<h2>Personal projects</h2>
-<p>Interact with images to enlarge · Interact with names for relevant links</p>
-</div>
-</div>
-</div>
-<div class="filters portfolio-filter">
-<ul>
-<li class="active" data-filter="*">all</li>
-<li data-filter=".popular">popular</li>
-<li data-filter=".latest">latest</li>
-</ul>
-</div>
-<div class="filters-content">
-<div class="row portfolio-grid justify-content-center">
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/triviahome.png" alt="Trivia Trials">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">Game</p>
+              <h3><a href="https://github.com/JustaShadow2/Trivia-Trials" target="_blank" rel="noopener">Trivia Trials</a></h3>
+              <p>Interactive educational trivia experience built for fast rounds and replay.</p>
+            </div>
+          </article>
 
-<div class="col-lg-4 col-md-6 all latest popular">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/pokequant.jpg" alt="PokeQuant">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/uncropped-pokequant.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="#pokequant-detail">PokeQuant</a></h4>
-<p>Pokemon TCG analytics, ML fair value</p>
-</div>
-</div>
-</div>
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/studysquid.jpg" alt="Study Squid">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">EdTech</p>
+              <h3><a href="https://devpost.com/software/study-squid" target="_blank" rel="noopener">Study Squid</a></h3>
+              <p>Study companion that turns difficult material into structured practice habits.</p>
+            </div>
+          </article>
 
-<div class="col-lg-4 col-md-6 all latest popular">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/kouano.jpg" alt="Kouano">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/uncropped-kouano.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="#experience">Kouano</a></h4>
-<p>Generative music, open-weight API</p>
-</div>
-</div>
-</div>
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/myapply.jpg" alt="myApply">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">Community</p>
+              <h3><a href="https://myapply-uajanth.vercel.app/" target="_blank" rel="noopener">myApply</a></h3>
+              <p>Mentorship matching for aspiring builders seeking industry guidance.</p>
+            </div>
+          </article>
 
-<div class="col-lg-4 col-md-6 all latest">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/triviahome.png" alt="">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/trivia.png" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://github.com/JustaShadow2/Trivia-Trials">Trivia Trials</a></h4>
-<p>Educational Game, Interactive</p>
-</div>
-</div>
-</div>
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/bonvoyage.jpg" alt="Bon Voyage">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">Automation</p>
+              <h3><a href="https://devpost.com/software/adventure-explorer" target="_blank" rel="noopener">Bon Voyage</a></h3>
+              <p>Travel planning powered by scraping pipelines and AI assistance.</p>
+            </div>
+          </article>
 
-<div class="col-lg-4 col-md-6 all latest">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/studysquid.jpg" alt="">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/uncropped-studysquid.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://devpost.com/software/study-squid">Study Squid</a></h4>
-<p>Educational Game, Interactive</p>
-</div>
-</div>
-</div>
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/roadmapai.jpg" alt="roadmap.ai">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">NLP</p>
+              <h3><a href="https://devpost.com/software/roadmap-ai" target="_blank" rel="noopener">roadmap.ai</a></h3>
+              <p>GPT-powered task decomposition into concrete execution roadmaps.</p>
+            </div>
+          </article>
 
-<div class="col-lg-4 col-md-6 all latest popular">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/logo_blue.png" alt="">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/ribbonresults.png" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://www.getribbon.ai">Financial Calculator</a></h4>
-<p>Finance, Automation</p>
-</div>
-</div>
-</div>
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="img/projectimg/logo_blue.png" alt="Ribbon financial calculator">
+            </div>
+            <div class="project__meta">
+              <p class="project__tag">Finance</p>
+              <h3><a href="https://www.getribbon.ai" target="_blank" rel="noopener">Financial Calculator</a></h3>
+              <p>Automation-focused calculator work contributed during the Ribbon internship.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="col-lg-4 col-md-6 all popular">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/myapply.jpg" alt="">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/uncropped-myapply.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://myapply-uajanth.vercel.app/">myApply</a></h4>
-<p>Dynamic, Innovative</p>
-</div>
-</div>
-</div>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year></span> Arjun Atwal</p>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
 
-<div class="col-lg-4 col-md-6 all popular">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/bonvoyage.jpg" alt="">
-<div class="overlay"></div>
-<a href="img/uncroppedprojectimg/uncropped-bonvoyage.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://devpost.com/software/adventure-explorer">Bon Voyage</a></h4>
-<p>Web Scraping, Automation with AI</p>
-</div>
-</div>
-</div>
-
-<div class="col-lg-4 col-md-6 all following">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<img class="img-fluid w-100" src="img/projectimg/roadmapai.jpg" alt="">
-<div class="overlay"></div>
-<a href="img/projectimg/roadmapai.jpg" class="img-gal">
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href="https://devpost.com/software/roadmap-ai">roadmap.ai</a></h4>
-<p>Natural Language Processing<br>&nbsp;</p>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-<article class="experience_item highlight" id="pokequant-detail">
-<div class="experience_meta">
-<h3>PokeQuant — Pokemon TCG Quantitative Analytics</h3>
-<span class="experience_when">Personal Project · Data / ML / Full-Stack</span>
-</div>
-<p class="experience_summary">
-Quantitative market platform for Pokemon TCG: nightly price pipelines across TCGPlayer and eBay (raw + graded), ML fair-value predictions with confidence intervals, demand/momentum signals, PSA grading ROI, sealed-product tracking, and leaderboards across Scarlet &amp; Violet–era cards and sets.
-</p>
-<ul>
-<li>Built card/set/sealed explorers with multi-source price history charts (TCGPlayer market, eBay raw averages, PSA 9 / PSA 10 smart prices) and volume views (TCGPlayer sales + 7-day PSA 10 eBay volume).</li>
-<li>Implemented ML fair-value model outputs per card: predicted price, 90% CI bounds, UNDERVALUED / FAIR VALUE / OVERVALUED signal, prediction confidence, and ratio vs market — filterable and rankable in the UI.</li>
-<li>Engineered demand scoring (0–10 composite from search interest + 14d/30d price momentum) and PSA 10 grading ROI (smart graded price ÷ raw eBay), with confidence based on sold-listing sample size.</li>
-<li>Designed data model around snapshot tables for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned <code>model_predictions</code> for reproducible nightly refreshes.</li>
-<li>Shipped leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by cultural/premium metrics and 30-day movement; sealed booster boxes/ETBs/packs by price and change.</li>
-</ul>
-<p class="tech_line"><strong>Stack highlights:</strong> Next.js · TypeScript · Supabase/Postgres snapshot store · time-series market ingestion · ML regression / fair-value signals · Recharts-style analytics UI</p>
-</article>
-
-</div>
-</section>
-
-<footer class="footer_area">
-  <section class="contact_area">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-3">
-  <div class="contact_info">
-  <div class="info_item">
-  <i class="lnr lnr-home"></i>
-  <h6>Nobleton, Ontario</h6>
-  <p></p>
-  </div>
-  <div class="info_item">
-  <i class="lnr lnr-phone-handset"></i>
-  <h6><a href="#">+ 1 (647) 981 2705</a></h6>
-  <p></p>
-  </div>
-  <div class="info_item">
-  <i class="lnr lnr-envelope"></i>
-  <h6><a><span class="__cf_email__">atwalarjun@icloud.com</span></a></h6>
-  <p>Send me a message anytime!</p>
-  </div>
-  </div>
-  </div>
-  </section>
-
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-12">
-<div class="footer_top flex-column">
-<div class="footer_logo">
-<a href="#">
-<img src="img/logo.png" height="50px">
-</a>
-<h4>Follow Me</h4>
-</div>
-<div class="footer_social">
-<a href="https://www.linkedin.com/in/arjun-atwal-852a90241/" target="_blank"><img src="img/linkedin.png" height="50px"></a>
-<a href="https://github.com/JustaShadow2" target="_blank"><img src="img/github.png" height="50px"></a>
-<a href="https://leetcode.com/JustaShadow2/" target="_blank"><img src="img/leetcode.png" height="25px"></a>
-<a href="https://devpost.com/JustaShadow2" target="_blank"><img src="img/devpost.png" height="25px"></a>
-</div>
-</div>
-</div>
-</div>
-<div class="row footer_bottom justify-content-center">
-<p class="col-lg-8 col-sm-12 footer-text"></p>
-</div>
-</div>
-</footer>
-
-
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/stellar.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="vendors/isotope/isotope-min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/mail-script.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-<script src="js/gmaps.min.js"></script>
-<script src="js/theme.js"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
+  <script src="js/site.js"></script>
 </body>
 </html>
