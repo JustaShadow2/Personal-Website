@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 
 <link rel="stylesheet" href="css/style.css">
-<script nonce="63a7624c-9db2-4e2b-838e-3fa53c00a354">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+</head>
 <body>
 
 <header class="header_area">
@@ -34,13 +34,6 @@
 <ul class="nav navbar-nav menu_nav justify-content-end">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-<!--<li class="nav-item submenu dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-<ul class="dropdown-menu">
-<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-</ul>
-</li>-->
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 </ul>
 </div>
@@ -64,90 +57,68 @@
 </div>
 </section>
 
-
-<!--<section class="brand_area section_gap_bottom">
-<p><br><br></p>
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-6">
-<div class="row">
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo1.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo2.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo3.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo4.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo5.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo6.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo7.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo8.png" alt="">
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6">
-<div class="single-brand-item d-table">
-<div class="d-table-cell text-center">
-<img src="img/brands/logo9.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>-->
-
-<section class="portfolio_area section_gap_top" id="portfolio">
+<section class="experience_area section_gap_top" id="experience">
 <div class="container">
 <div class="row">
 <div class="col-lg-12">
 <div class="main_title text-left">
-<h2>Personal projects </h2>
-<p>Interact with Images to Enlarge</p>
-<p>Interact with Names for Relevant Links</p>
+<h2>Featured experience — Kouano</h2>
+<p>
+Open-weight, self-hosted, API-first music generation. Everything below is what I designed and engineered — product UI, inference API, quality gating, editing, stems, and provenance. Private beta.
+</p>
+</div>
+</div>
+</div>
+
+<article class="experience_item highlight kouano_detail">
+<div class="experience_meta">
+<h3>Founder &amp; Software Engineer — Kouano</h3>
+<span class="experience_when">2026 – Present · Generative Audio / Full-Stack AI</span>
+</div>
+
+<div class="row">
+<div class="col-lg-5 mb-4">
+<a href="img/uncroppedprojectimg/uncropped-kouano.jpg" class="img-gal">
+<img class="img-fluid w-100 kouano_img" src="img/projectimg/kouano.jpg" alt="Kouano music generation platform">
+</a>
+</div>
+<div class="col-lg-7">
+<p class="experience_summary">
+Kouano turns a text prompt (and optional lyrics) into finished, mastered songs — then lets creators edit, extend, separate stems, and export, while exposing the same engine as a public REST API for developers who want to self-host open weights.
+</p>
+<h4 class="detail_heading">What I built (product)</h4>
+<ul>
+<li>End-to-end creator loop: Create → Generating → Result → Editor, with dual-take comparison, Web Audio players, non-destructive version history, download (MP3/WAV), share, and “How this was made” provenance UI.</li>
+<li>Marketing + app + developer surface on one design system: persona toggle (creators / developers), pricing tiers, FAQ, trust/privacy messaging, light/dark, responsive, AA-minded contrast and reduced-motion support.</li>
+<li>Smart defaults for time-to-first-song: single prompt, Surprise-me + examples, Advanced panel for seed / steps / guidance / Studio tier.</li>
+</ul>
+</div>
+</div>
+
+<h4 class="detail_heading">What I built (systems &amp; ML infra)</h4>
+<ul>
+<li><strong>ACE-Step DiT serving stack</strong> with model registry (turbo / SFT / base DiT variants + 0.6B lyric LM), health/readiness reporting, local song storage backend, and production-oriented perf knobs (FP8 weight-only DiT quantization, compiled DiT, concurrency + queue limits).</li>
+<li><strong>Compose pipeline</strong> (<code>POST /v1/compose</code>): free-text prompt, optional lyrics (null → model writes lyrics via CoT), instrumental flag, duration up to 4 minutes on Turbo, CFG + denoising steps, seed-reproducible multi-take generation.</li>
+<li><strong>CLAP best-of-N quality gate</strong>: generate <code>n + overgenerate</code> takes, score/rerank, discard losers, return winners with CLAP scores, timings, LUFS, and SLA flags — surfaced in-product as “we kept your best takes.”</li>
+<li><strong>Lyric integrity loop</strong>: optional ASR verification so takes actually sing provided lyrics; regenerate until the gate’s quota of valid vocal takes is met.</li>
+<li><strong>M2 editing API</strong>: cover/remix, time-bounded section repaint (latent + WAV crossfades, strength/strategy controls), worker extend, and multi-hop orchestrated extend (async jobs with overlap stitching so tracks truly lengthen).</li>
+<li><strong>Stem separation</strong>: MelBand-RoFormer / BS-RoFormer primary engines with Demucs fallback; per-stem fetch, instrumental stem, and Studio stems.zip for vocals/drums/bass/synths/FX/master.</li>
+<li><strong>Provenance &amp; ownership</strong>: per-track record of models, settings, and exact seeds; inaudible watermark; commercial-ready exports; open-weight self-host path so prompts stay private and never become training data.</li>
+<li><strong>Developer API surface</strong>: OpenAPI-documented REST (sync generate + compose, streaming-oriented design, stems + provenance endpoints) — same engine as the app, intended for product embedding and on-prem GPUs / white-label.</li>
+</ul>
+
+<p class="tech_line"><strong>Stack highlights:</strong> ACE-Step DiT + lyric LM · CLAP reranking · RoFormer/Demucs separation · FastAPI-style REST/OpenAPI · Web Audio · React design-component UI · GPU inference (FP8, compiled) · async job orchestration</p>
+</article>
+</div>
+</section>
+
+<section class="portfolio_area" id="portfolio">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="main_title text-left">
+<h2>Personal projects</h2>
+<p>Interact with images to enlarge · Interact with names for relevant links</p>
 </div>
 </div>
 </div>
@@ -155,13 +126,48 @@
 <ul>
 <li class="active" data-filter="*">all</li>
 <li data-filter=".popular">popular</li>
-<li data-filter=".latest"> latest</li>
-<!--<li data-filter=".following">following</li>
-<li data-filter=".upcoming">upcoming</li>-->
+<li data-filter=".latest">latest</li>
 </ul>
 </div>
 <div class="filters-content">
 <div class="row portfolio-grid justify-content-center">
+
+<div class="col-lg-4 col-md-6 all latest popular">
+<div class="portfolio_box">
+<div class="single_portfolio">
+<img class="img-fluid w-100" src="img/projectimg/pokequant.jpg" alt="PokeQuant">
+<div class="overlay"></div>
+<a href="img/uncroppedprojectimg/uncropped-pokequant.jpg" class="img-gal">
+<div class="icon">
+<span class="lnr lnr-cross"></span>
+</div>
+</a>
+</div>
+<div class="short_info">
+<h4><a href="#pokequant-detail">PokeQuant</a></h4>
+<p>Pokemon TCG analytics, ML fair value</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 all latest popular">
+<div class="portfolio_box">
+<div class="single_portfolio">
+<img class="img-fluid w-100" src="img/projectimg/kouano.jpg" alt="Kouano">
+<div class="overlay"></div>
+<a href="img/uncroppedprojectimg/uncropped-kouano.jpg" class="img-gal">
+<div class="icon">
+<span class="lnr lnr-cross"></span>
+</div>
+</a>
+</div>
+<div class="short_info">
+<h4><a href="#experience">Kouano</a></h4>
+<p>Generative music, open-weight API</p>
+</div>
+</div>
+</div>
+
 <div class="col-lg-4 col-md-6 all latest">
 <div class="portfolio_box">
 <div class="single_portfolio">
@@ -270,67 +276,31 @@
 </div>
 </div>
 
-<div class="col-lg-4 col-md-6 all upcoming following">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<!--<img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt="">--> <!--empty for now-->
-<div class="overlay"></div>
-<!--<a href="img/portfolio/p7.jpg" class="img-gal">--> <!--empty for now-->
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href=""></a></h4> <!--empty for now-->
-<p></p> <!--empty for now-->
 </div>
 </div>
+
+<article class="experience_item highlight" id="pokequant-detail">
+<div class="experience_meta">
+<h3>PokeQuant — Pokemon TCG Quantitative Analytics</h3>
+<span class="experience_when">Personal Project · Data / ML / Full-Stack</span>
 </div>
-<div class="col-lg-4 col-md-6 all following">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<!--<img class="img-fluid w-100" src="img/portfolio/p8.jpg" alt="">--> <!--empty for now-->
-<div class="overlay"></div>
-<!--<a href="img/portfolio/p8.jpg" class="img-gal">--> <!--empty for now-->
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4></h4> <!--empty for now-->
-<p></p> <!--empty for now-->
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 all upcoming">
-<div class="portfolio_box">
-<div class="single_portfolio">
-<!--<img class="img-fluid w-100" src="img/portfolio/p9.jpg" alt="">--> <!--empty for now-->
-<div class="overlay"></div>
-<!--<a href="img/portfolio/p9.jpg" class="img-gal">--> <!--empty for now-->
-<div class="icon">
-<span class="lnr lnr-cross"></span>
-</div>
-</a>
-</div>
-<div class="short_info">
-<h4><a href=""></a></h4> <!--empty for now-->
-<p></p> <!--empty for now-->
-<br>
-<br>
-<br>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p class="experience_summary">
+Quantitative market platform for Pokemon TCG: nightly price pipelines across TCGPlayer and eBay (raw + graded), ML fair-value predictions with confidence intervals, demand/momentum signals, PSA grading ROI, sealed-product tracking, and leaderboards across Scarlet &amp; Violet–era cards and sets.
+</p>
+<ul>
+<li>Built card/set/sealed explorers with multi-source price history charts (TCGPlayer market, eBay raw averages, PSA 9 / PSA 10 smart prices) and volume views (TCGPlayer sales + 7-day PSA 10 eBay volume).</li>
+<li>Implemented ML fair-value model outputs per card: predicted price, 90% CI bounds, UNDERVALUED / FAIR VALUE / OVERVALUED signal, prediction confidence, and ratio vs market — filterable and rankable in the UI.</li>
+<li>Engineered demand scoring (0–10 composite from search interest + 14d/30d price momentum) and PSA 10 grading ROI (smart graded price ÷ raw eBay), with confidence based on sold-listing sample size.</li>
+<li>Designed data model around snapshot tables for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned <code>model_predictions</code> for reproducible nightly refreshes.</li>
+<li>Shipped leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by cultural/premium metrics and 30-day movement; sealed booster boxes/ETBs/packs by price and change.</li>
+</ul>
+<p class="tech_line"><strong>Stack highlights:</strong> Next.js · TypeScript · Supabase/Postgres snapshot store · time-series market ingestion · ML regression / fair-value signals · Recharts-style analytics UI</p>
+</article>
+
 </div>
 </section>
 
 <footer class="footer_area">
-  <!--contact section within footer section (this can be improved, I will do that on second version)-->
   <section class="contact_area">
   <div class="container">
   <div class="row">
@@ -353,35 +323,6 @@
   </div>
   </div>
   </div>
-  <!--<div class="col-lg-9">
-  <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-  <div class="col-md-6">
-  <div class="form-group">
-  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-  </div>
-  <div class="form-group">
-  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-  </div>
-  <div class="form-group">
-  <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-  </div>
-  </div>
-  <div class="col-md-6">
-  <div class="form-group">
-  <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-  </div>
-  </div>
-  <div class="col-md-12 text-right">
-  <button type="submit" value="submit" class="primary_btn">
-  <span>Send Message</span>
-  </button>
-  </div>
-  </form>
-  </div>
-  </div>
-  <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083" data-mlon="-74.1522848">
-  </div>
-  </div>-->
   </section>
 
 <div class="container">
@@ -435,6 +376,5 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cf19672c8a7a23b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
