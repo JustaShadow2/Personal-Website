@@ -75,13 +75,14 @@
               <h3>Royal Bank of Canada</h3>
               <p class="job__role">Software Engineer Intern · Toronto</p>
               <ul>
-                <li>Designed a scalable automated testing framework for global remittance payment systems across 12 APIs, removing manual pre-production validation.</li>
-                <li>Built a high-fidelity Interac bulk payment stub simulating async ACK/report/response workflows, collapsing multi-minute external latency to near-instant local execution.</li>
-                <li>Integrated regression suites into GitHub Actions for continuous commit-level confidence.</li>
+                <li>Designed and implemented a scalable automated testing framework for global remittance payment systems, covering end-to-end validation across 12 APIs and removing manual pre-production test work that previously gated releases.</li>
+                <li>Built a high-fidelity Interac bulk-payment stub that simulated the full async contract — ACKs, reports, and responses — so QA and developers no longer blocked on the live Interac service (up to ~5 minutes per round-trip) and could run the same workflows locally in near-instant time.</li>
+                <li>Cut the remittance inner loop from “wait on an external payment rail” to “run the suite on every commit”: wired the automated tests into GitHub Actions for continuous regression, raising deployment confidence and shrinking the window where defects escaped to post-release.</li>
+                <li>Worked in a Kanban delivery cadence with stand-ups and backlog refinement alongside senior engineers, keeping the stub, suites, and CI path in the same continuous-delivery stream as the remittance services.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>Java</span><span>Karate</span><span>API Testing</span><span>GitHub Actions</span><span>Interac</span><span>Payments</span><span>CI/CD</span>
+                <span>Java</span><span>Karate</span><span>API Testing</span><span>GitHub Actions</span><span>Interac</span><span>Payments</span><span>CI/CD</span><span>Kanban</span><span>Service stubs</span>
               </div>
             </div>
           </article>
@@ -92,13 +93,14 @@
               <h3>BioAro</h3>
               <p class="job__role">Software Engineer Intern · Calgary</p>
               <ul>
-                <li>Shipped full-stack Laravel and REST features across core production workflows.</li>
-                <li>Optimized backend services and SQL for efficient production data retrieval.</li>
-                <li>Integrated ML pipelines from preprocessing through evaluation into deployment paths.</li>
+                <li>Shipped production full-stack features in Laravel and REST over a 6-month internship, improving responsiveness and scaling user interactions across core precision-health workflows rather than one-off prototypes.</li>
+                <li>Designed and optimized backend services and SQL so production reads stayed efficient as datasets grew — indexing and query shape work aimed at retrieval cost, not just feature completeness.</li>
+                <li>Built ML pipelines through the full loop — preprocessing, training, evaluation, then wiring the resulting model into application workflows — so models left the notebook and ran behind live product paths.</li>
+                <li>Raised release reliability by adding unit, API, and integration tests across the stack, catching defects before they reached pre-release and reducing the bugs that used to surface only in staging.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>Laravel</span><span>PHP</span><span>REST APIs</span><span>SQL</span><span>Python</span><span>Machine Learning</span><span>Testing</span>
+                <span>Laravel</span><span>PHP</span><span>REST APIs</span><span>SQL</span><span>Python</span><span>Machine Learning</span><span>Unit / API / Integration tests</span>
               </div>
             </div>
           </article>
@@ -109,12 +111,13 @@
               <h3>SteepDeep</h3>
               <p class="job__role">Software Engineer Intern · Toronto</p>
               <ul>
-                <li>Automated a Python pipeline converting raw imagery into optimized tilesets for interactive maps.</li>
-                <li>Integrated Mapbox and AWS S3 to streamline geospatial upload, processing, and publishing.</li>
+                <li>Built a Python map-generation pipeline that turned raw image assets into optimized tilesets — replacing a manual convert-and-hand-off step with a repeatable path into interactive mapping apps.</li>
+                <li>Integrated the Mapbox API to upload, process, and manage geospatial data so map rendering could scale with asset volume instead of one-off Studio uploads.</li>
+                <li>Automated publishing to AWS S3 so tileset deployment was no longer a copy/paste ops task, cutting manual overhead and shortening the time from new imagery to a live map.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>Python</span><span>Mapbox</span><span>AWS S3</span><span>Geospatial</span><span>Automation</span>
+                <span>Python</span><span>Mapbox</span><span>Mapbox API</span><span>AWS S3</span><span>Tilesets</span><span>Geospatial</span><span>Automation</span>
               </div>
             </div>
           </article>
@@ -125,11 +128,12 @@
               <h3>Ribbon Business</h3>
               <p class="job__role">Software Engineer Intern · Toronto</p>
               <ul>
-                <li>Prototyped React UI components and contributed to end-to-end feature delivery.</li>
+                <li>Built and prototyped React UI components for end-to-end feature work, including financial-calculator surfaces, iterating with design so UX issues were caught in component form instead of after a full-page ship.</li>
+                <li>Worked in short design–build cycles (Figma → React) so product changes could land as reusable pieces rather than one-off markup, improving consistency across the calculator and related flows.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>React</span><span>JavaScript</span><span>UI</span><span>Figma</span>
+                <span>React</span><span>JavaScript</span><span>HTML/CSS</span><span>Figma</span><span>UI prototyping</span><span>Finance</span>
               </div>
             </div>
           </article>
@@ -140,12 +144,12 @@
               <h3>Government of Ontario</h3>
               <p class="job__role">Software Engineer Intern · Mississauga</p>
               <ul>
-                <li>Extended XML/XSLT pipelines for field officer reporting systems.</li>
-                <li>Built a Mapbox geospatial tool for real-time officer location tracking.</li>
+                <li>Extended XML/XSLT pipelines on field-officer reporting systems so generated reports could carry new fields and layouts without a full rewrite of the reporting stack — faster iteration on what officers actually filed in the field.</li>
+                <li>Built an interactive Mapbox geospatial view that plotted officer locations in real time, replacing static/report-only location checks with a live map operators could watch during a shift.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>XML</span><span>XSLT</span><span>Mapbox</span><span>JavaScript</span><span>Geospatial</span>
+                <span>XML</span><span>XSLT</span><span>Mapbox</span><span>JavaScript</span><span>Geospatial</span><span>Reporting systems</span>
               </div>
             </div>
           </article>
