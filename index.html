@@ -18,11 +18,11 @@
         <p class="role">AI Engineer Intern</p>
         <p class="lede">I build production systems that hold under pressure — payments, biotech tooling, geospatial pipelines, and generative audio.</p>
         <nav class="section-nav" data-section-nav aria-label="Page sections">
-          <a href="#about" class="is-active" aria-current="location"><span class="bar"></span>About</a>
-          <a href="#experience"><span class="bar"></span>Experience</a>
-          <a href="#projects"><span class="bar"></span>Projects</a>
-          <a href="#skills"><span class="bar"></span>Skills</a>
-          <a href="#contact"><span class="bar"></span>Contact</a>
+          <a href="#about" class="is-active" aria-current="true"><span class="bar" aria-hidden="true"></span>About</a>
+          <a href="#experience"><span class="bar" aria-hidden="true"></span>Experience</a>
+          <a href="#projects"><span class="bar" aria-hidden="true"></span>Projects</a>
+          <a href="#skills"><span class="bar" aria-hidden="true"></span>Skills</a>
+          <a href="#contact"><span class="bar" aria-hidden="true"></span>Contact</a>
         </nav>
       </div>
       <ul class="socials">
@@ -67,11 +67,14 @@
             <h3>AI Engineer Intern · <span class="place">Kouano</span></h3>
             <p>Open-weight, API-first music generation — creator studio, inference stack, and an 18-endpoint OpenAPI REST surface on one engine. Calgary.</p>
             <ul class="details">
-              <li>Served ACE-Step DiT (turbo / SFT / base + 0.6B lyric LM) with FP8 and compiled kernels: 48 kHz stereo masters in under 10s on Quick, 15s compose SLA.</li>
-              <li>Compose for 10–240s songs across 50+ languages, 16 genre presets, 5 lyric templates, CoT lyric writing, and seed-reproducible multi-take output.</li>
-              <li>CLAP best-of-N gate (default generate 3 / keep 2) plus default-on ASR lyric verify (~0.20 overlap, duration-scaled retries) so weak or mismatched takes never ship.</li>
-              <li>M2 editing: cover/remix, section repaint with crossfades, multi-hop async extend with 4s overlap stitching, non-destructive version history.</li>
-              <li>Live MelBand-RoFormer stems (BS-RoFormer / Demucs fallback) and 6-stem Studio ZIP; unlocked 320 kbps MP3 / 48 kHz WAV; provenance; self-host / white-label path; 99.9% uptime target.</li>
+              <li>Shipped the product end-to-end: creator studio (Create → Generating → Result → Editor), dual-audience marketing surface, and an 18-endpoint OpenAPI 3.1 REST API so the same engine powers the app and third-party integrations.</li>
+              <li>Served ACE-Step DiT in production (turbo / SFT / base plus a 0.6B lyric LM) with FP8 weight-only quantization and compiled kernels: 48 kHz stereo masters in under 10 seconds on Quick, 15s compose SLA.</li>
+              <li>Engineered a CLAP best-of-N quality gate (default generate 3 / keep 2; up to 4 kept + 3 extra) that reranks takes by CLAP and returns winners with scores, LUFS, per-stage timings, and an sla_met flag — weak takes never ship.</li>
+              <li>Added default-on ASR lyric verification (~0.20 word-overlap) that regenerates until n takes actually sing the prompt, with duration-scaled retry caps (12 / 6 / 6 for short / mid / long, max 16).</li>
+              <li>Compose for 10–240s songs (4 min Turbo cap) across 50+ languages, with 16 BPM-conditioned genre presets, 5 lyric structure templates, CoT lyric writing when lyrics are omitted, and seed-reproducible multi-take output (take i = seed+i).</li>
+              <li>Shipped M2 editing: cover/remix, time-bounded section repaint (10-frame latent + 0.05s WAV crossfades, 2s context), and multi-hop async extend with 4s overlap stitching — non-destructive, with version history.</li>
+              <li>Live MelBand-RoFormer stems (Kim FT checkpoint) with BS-RoFormer secondary and Demucs fallback; instrumental fetch plus a 6-stem Studio ZIP (vocals, drums, bass, synths, FX, master) for DAW handoff.</li>
+              <li>Per-track provenance (models, settings, exact seed), inaudible watermark, unlocked 320 kbps MP3 and 48 kHz WAV, prompts never used as training data, and an open-weight self-host / white-label path with a 99.9% uptime target on the hosted API.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>OpenAPI</li><li>ACE-Step</li><li>DiT</li><li>CLAP</li><li>ASR</li><li>MelBand-RoFormer</li><li>FP8</li><li>React</li>
@@ -85,9 +88,11 @@
             <h3>Software Engineer Intern · <span class="place">Royal Bank of Canada</span></h3>
             <p>Global remittance payments — automated testing and an Interac stub so pre-prod no longer waited on a live rail. Toronto.</p>
             <ul class="details">
-              <li>End-to-end validation framework across 12 remittance APIs, removing manual pre-production testing that previously gated releases.</li>
-              <li>High-fidelity Interac bulk-payment stub for async ACKs, reports, and responses — cut up to ~5-minute external waits to near-instant local runs.</li>
-              <li>Wired suites into GitHub Actions for regression on every commit; Kanban with seniors on the same continuous-delivery stream.</li>
+              <li>Designed and implemented a scalable automated testing framework for global remittance payment systems, covering end-to-end validation across 12 APIs and removing manual pre-production test work that previously gated releases.</li>
+              <li>Built a high-fidelity Interac bulk-payment stub that simulated the full async contract — ACKs, reports, and responses — so QA and developers no longer blocked on the live Interac service (up to ~5 minutes per round-trip).</li>
+              <li>Wired the automated suites into GitHub Actions for continuous regression on every commit, raising deployment confidence and shrinking the window where defects escaped to post-release.</li>
+              <li>Cut the remittance inner loop from waiting on an external payment rail to near-instant local runs of the same workflows.</li>
+              <li>Worked in a Kanban delivery cadence with stand-ups and backlog refinement alongside senior engineers, keeping the stub, suites, and CI path in the same continuous-delivery stream as the remittance services.</li>
             </ul>
             <ul class="pills">
               <li>Java</li><li>Karate</li><li>GitHub Actions</li><li>Interac</li><li>API Testing</li><li>CI/CD</li>
@@ -101,10 +106,10 @@
             <h3>Software Engineer Intern · <span class="place">BioAro</span></h3>
             <p>Full-stack precision-health product work — Laravel, REST, SQL, and ML that actually ran in the app. Calgary.</p>
             <ul class="details">
-              <li>Shipped production Laravel/REST features over 6 months across core workflows, not one-off prototypes.</li>
-              <li>Optimized backend services and SQL for production retrieval as datasets grew.</li>
-              <li>ML pipelines from preprocessing through training and evaluation, then deployed into live application paths.</li>
-              <li>Unit, API, and integration tests across the stack to catch defects before pre-release.</li>
+              <li>Shipped production full-stack features in Laravel and REST over a 6-month internship, improving responsiveness and scaling user interactions across core precision-health workflows rather than one-off prototypes.</li>
+              <li>Designed and optimized backend services and SQL so production reads stayed efficient as datasets grew — indexing and query shape work aimed at retrieval cost, not just feature completeness.</li>
+              <li>Built ML pipelines through the full loop — preprocessing, training, evaluation, then wiring the resulting model into application workflows — so models left the notebook and ran behind live product paths.</li>
+              <li>Raised release reliability by adding unit, API, and integration tests across the stack, catching defects before they reached pre-release.</li>
             </ul>
             <ul class="pills">
               <li>Laravel</li><li>PHP</li><li>REST</li><li>SQL</li><li>Python</li><li>Machine Learning</li>
@@ -118,9 +123,10 @@
             <h3>Software Engineer Intern · <span class="place">SteepDeep</span></h3>
             <p>Geospatial publishing — raw imagery to live maps without the manual hand-off. Toronto.</p>
             <ul class="details">
-              <li>Python pipeline converting raw image assets into optimized tilesets for interactive mapping.</li>
-              <li>Mapbox API integration to upload, process, and manage geospatial data at volume.</li>
-              <li>Automated AWS S3 publishes so new imagery reached a live map without copy/paste ops.</li>
+              <li>Built a Python map-generation pipeline that turned raw image assets into optimized tilesets for interactive mapping apps.</li>
+              <li>Integrated the Mapbox API to upload, process, and manage geospatial data so rendering could scale with asset volume instead of one-off Studio uploads.</li>
+              <li>Automated publishing to AWS S3 so tileset deployment was no longer a copy/paste ops task.</li>
+              <li>Cut manual overhead and shortened the path from new imagery to a live map.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>Mapbox</li><li>AWS S3</li><li>Tilesets</li><li>Geospatial</li>
@@ -134,8 +140,10 @@
             <h3>Software Engineer Intern · <span class="place">Ribbon Business</span></h3>
             <p>React UI for financial-calculator and related flows, iterated with design instead of after ship. Toronto.</p>
             <ul class="details">
-              <li>Prototyped React components for end-to-end features, including calculator surfaces.</li>
-              <li>Figma → React cycles so UX issues landed as reusable pieces, not one-off markup.</li>
+              <li>Built and prototyped React UI components for end-to-end feature development.</li>
+              <li>Shipped financial-calculator surfaces as part of that UI work, not as a throwaway mock.</li>
+              <li>Worked in short Figma → React cycles so UX issues were caught in component form instead of after a full-page ship.</li>
+              <li>Landed product changes as reusable pieces rather than one-off markup, improving consistency across the calculator and related flows.</li>
             </ul>
             <ul class="pills">
               <li>React</li><li>JavaScript</li><li>HTML/CSS</li><li>Figma</li>
@@ -149,8 +157,10 @@
             <h3>Software Engineer Intern · <span class="place">Government of Ontario</span></h3>
             <p>Field-officer reporting and a live map instead of static location checks. Mississauga.</p>
             <ul class="details">
-              <li>Extended XML/XSLT pipelines so reports could take new fields and layouts without rewriting the stack.</li>
-              <li>Mapbox visualization of officer locations in real time during a shift.</li>
+              <li>Extended XML/XSLT pipelines on field-officer reporting systems.</li>
+              <li>Generated reports could take new fields and layouts without a full rewrite of the reporting stack.</li>
+              <li>Built an interactive Mapbox geospatial view that plotted officer locations in real time.</li>
+              <li>Replaced static, report-only location checks with a live map operators could watch during a shift.</li>
             </ul>
             <ul class="pills">
               <li>XML</li><li>XSLT</li><li>Mapbox</li><li>JavaScript</li>
@@ -169,10 +179,12 @@
             <h3>PokeQuant</h3>
             <p>Quantitative Pokemon TCG analytics — fair value, demand, grading ROI, and sealed tracking across TCGPlayer and eBay.</p>
             <ul class="details">
-              <li>Multi-source price history (TCGPlayer, eBay raw / PSA 9 / PSA 10) plus volume views including 7-day PSA 10 eBay volume.</li>
-              <li>ML fair-value predictions with 90% CI, UNDERVALUED / FAIR / OVERVALUED signal, confidence, and ratio vs market.</li>
-              <li>0–10 demand score from search interest and 14d/30d momentum; PSA 10 ROI from graded vs raw eBay with sample-size confidence.</li>
-              <li>Snapshot tables and versioned model_predictions for nightly refreshes; leaderboards for cards, sets, and sealed product.</li>
+              <li>Built multi-source price history across TCGPlayer market prices and eBay raw / PSA 9 / PSA 10 smart prices, plus volume views for TCGPlayer sales and 7-day PSA 10 eBay volume.</li>
+              <li>Implemented ML fair-value predictions per card with predicted price, 90% confidence interval, UNDERVALUED / FAIR VALUE / OVERVALUED signal, confidence tier, and ratio versus live market.</li>
+              <li>Engineered demand scoring as a 0–10 composite from search interest and 14-day / 30-day price momentum, filterable and rankable in the UI.</li>
+              <li>Computed PSA 10 grading ROI as smart graded price divided by raw eBay price, with confidence tied to sold-listing sample size.</li>
+              <li>Designed a snapshot data model for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned model_predictions to keep nightly refreshes reproducible.</li>
+              <li>Shipped leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by premium metrics and 30-day movement; sealed booster boxes, ETBs, and packs by price and change.</li>
             </ul>
             <ul class="pills">
               <li>TypeScript</li><li>Next.js</li><li>React</li><li>SQL</li><li>Postgres</li><li>ML</li>
@@ -188,8 +200,10 @@
             </h3>
             <p>DataSci 3000: nonlinear regression predicts a Freshness Index, then Groq recipes bias toward what expires first.</p>
             <ul class="details">
-              <li>Sigmoid decay fits with SciPy curve_fit; steep vs non-steep formulations against held-out CSVs.</li>
-              <li>Index wired into Groq-backed recipe generation; notebooks and formatters for reproducible runs.</li>
+              <li>Fitted sigmoid decay models with SciPy curve_fit to map days → perceived freshness across observed spoil curves.</li>
+              <li>Compared steep vs non-steep nonlinear regression formulations and validated against held-out CSV test sets in a shared data schema.</li>
+              <li>Wired Freshness Index outputs into Groq-backed recipe generation so suggestions bias toward ingredients that expire soonest.</li>
+              <li>Packaged training/evaluation notebooks plus data-formatting utilities for reproducible experiments.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>NumPy</li><li>SciPy</li><li>Jupyter</li><li>Groq</li>
@@ -205,8 +219,10 @@
             </h3>
             <p>CS 2212 board trivia — timed rounds, multiplayer, instructor hooks, MongoDB persistence.</p>
             <ul class="details">
-              <li>pygame / pygame-gui loop with streaks and progressive difficulty; unit-tested generation and queries.</li>
-              <li>MongoDB for scores, profiles, saves, and debug mode.</li>
+              <li>Built the board gameplay loop in Python with pygame / pygame-gui: timed rounds, streak scoring, and progressive difficulty.</li>
+              <li>Implemented question generation and query management modules with unit tests for core board and generation logic.</li>
+              <li>Integrated MongoDB for high scores, player profiles, save files, and developer/debug mode features.</li>
+              <li>Designed for classroom use with instructor visibility into learning progress and a maintainable debug surface for future contributors.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>pygame</li><li>MongoDB</li><li>unittest</li>
@@ -222,8 +238,10 @@
             </h3>
             <p>Hack Western: applicant–company matching with profiles, snippets, likes, and recruiter flows.</p>
             <ul class="details">
-              <li>React + Router + MUI for auth, accounts, tags, and matching; Flask for signup/login, profiles, likes, uploads.</li>
-              <li>MongoDB / PyMongo, bcrypt, CORS, Infobip outreach hooks.</li>
+              <li>Built React frontend flows for auth, landing, account pages, code-snippet tagging, and recruiter matching views with React Router and MUI.</li>
+              <li>Implemented Flask backend endpoints for signup/login, company profiles, applicant profiles, likes, and logo/resume uploads.</li>
+              <li>Used MongoDB via PyMongo for profile and match state, with bcrypt password hashing and CORS-enabled API access.</li>
+              <li>Added email/notification integration hooks (Infobip) for outreach around matches and account events.</li>
             </ul>
             <ul class="pills">
               <li>React</li><li>Flask</li><li>MongoDB</li><li>MUI</li>
@@ -239,8 +257,10 @@
             </h3>
             <p>Find a board in a photo, OCR the digits, backtrack the grid.</p>
             <ul class="details">
-              <li>OpenCV: bilateral filter, Canny, contours, perspective warp; 81 cells into a Keras OCR model.</li>
-              <li>Constraint-validating backtracking, mapped back into image space.</li>
+              <li>Used OpenCV for bilateral filtering, Canny edges, contour detection, and perspective warps to isolate the board.</li>
+              <li>Split boards into 81 normalized cells and classified digits with a Keras OCR model.</li>
+              <li>Implemented constraint-validating backtracking to fill the extracted board.</li>
+              <li>Mapped solved grids back into image space so the original photo shows the completed puzzle.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>OpenCV</li><li>Keras</li><li>OCR</li>
@@ -256,7 +276,10 @@
             </h3>
             <p>QHacks: unlimited practice problems, live checking, XP/levels.</p>
             <ul class="details">
-              <li>Python generators + Flask; Wolfram verification into HTML/JS; multi-unit exam mixing.</li>
+              <li>Wrote Python generators for calculus and linear algebra problem sets.</li>
+              <li>Served them through a Flask backend into a vanilla HTML/JS frontend.</li>
+              <li>Integrated Wolfram for solution verification and step-style feedback.</li>
+              <li>Added subject selection, multi-unit mixing for exam prep, and an XP/leveling loop to make practice sticky.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>Flask</li><li>JavaScript</li><li>Wolfram API</li>
@@ -272,7 +295,10 @@
             </h3>
             <p>UofTHacks travel planner: Yelp + Google Maps + GPT-3 itineraries.</p>
             <ul class="details">
-              <li>Flask + Bootstrap; high-rated attractions, routed maps, 3-day GPT-3 plans in one flow.</li>
+              <li>Built a Flask + HTML/Bootstrap app that accepts origin/destination and returns a structured trip plan.</li>
+              <li>Parsed Yelp reviews to surface high-rated attractions.</li>
+              <li>Rendered routes with Google Maps, including flight-aware pathing experiments.</li>
+              <li>Generated custom 3-day itineraries with the GPT-3 API and stitched the three API surfaces into one end-to-end planner.</li>
             </ul>
             <ul class="pills">
               <li>Python</li><li>Flask</li><li>GPT-3</li><li>Yelp API</li><li>Google Maps</li>
@@ -288,7 +314,10 @@
             </h3>
             <p>DeltaHacks: GPT-3 turns a goal into ordered steps.</p>
             <ul class="details">
-              <li>Browser UI + GPT-3 API; prompt formatting and request handling as the core loop.</li>
+              <li>Integrated the GPT-3 API into a browser UI so users can enter a goal and receive ordered execution steps.</li>
+              <li>Worked through JS ↔ API integration around request handling and prompt formatting.</li>
+              <li>Kept the core loop as prompt in, roadmap out — a concrete plan instead of an open-ended chat.</li>
+              <li>Scoped follow-on ideas for schedule generation and timetable assignment on top of the roadmap core.</li>
             </ul>
             <ul class="pills">
               <li>JavaScript</li><li>Node.js</li><li>GPT-3</li>
@@ -304,7 +333,10 @@
             </h3>
             <p>Hack Western: recruiter outreach by field of study.</p>
             <ul class="details">
-              <li>Next.js frontend; Flask + SendGrid for structured mass email instead of ad-hoc cold outreach.</li>
+              <li>Built the Next.js frontend for browsing companies and recruiter contacts by field of study.</li>
+              <li>Implemented a Flask backend for sample data serving and SendGrid-powered mass email outreach.</li>
+              <li>Turned cold outreach into a structured, repeatable workflow instead of ad-hoc messages.</li>
+              <li>Aimed at first-year CS networking friction — getting a first recruiter conversation without a personal pipeline.</li>
             </ul>
             <ul class="pills">
               <li>Next.js</li><li>React</li><li>Flask</li><li>SendGrid</li>

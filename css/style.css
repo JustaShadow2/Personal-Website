@@ -1,19 +1,18 @@
-/* Interactive résumé — sticky intro, scrolling content, mint accent
-   Layout and interaction inspired by contemporary single-page engineer sites
+/* Interactive résumé — sticky intro, scrolling content
 ================================================== */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg: #0f172a;
-  --ink: #e2e8f0;
-  --ink-bright: #f1f5f9;
-  --muted: #94a3b8;
-  --faint: #64748b;
-  --line: rgba(226, 232, 240, 0.1);
-  --accent: #5eead4;
-  --accent-dim: rgba(45, 212, 191, 0.1);
-  --spot: rgba(29, 78, 216, 0.15);
+  --bg: #161311;
+  --ink: #ece6dc;
+  --ink-bright: #f7f1e8;
+  --muted: #b8ada0;
+  --faint: #8a7e72;
+  --line: rgba(236, 230, 220, 0.12);
+  --accent: #e0a45a;
+  --accent-dim: rgba(224, 164, 90, 0.12);
+  --spot: rgba(224, 164, 90, 0.14);
   --font: "Inter", system-ui, sans-serif;
   --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,39 +154,60 @@ ul {
 .section-nav {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
 .section-nav a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 1rem;
-  width: max-content;
+  width: auto;
+  max-width: 100%;
+  padding: 0.45rem 0.15rem;
   color: var(--faint);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  background: none;
+  border: 0;
 }
 
 .section-nav a .bar {
   display: inline-block;
+  flex: 0 0 auto;
   width: 2rem;
   height: 1px;
   background: currentColor;
   transition: width 0.2s var(--ease), background 0.2s var(--ease);
 }
 
-.section-nav a.is-active,
 .section-nav a:hover,
 .section-nav a:focus-visible {
+  color: var(--ink);
+}
+
+.section-nav a:hover .bar,
+.section-nav a:focus-visible .bar {
+  width: 3rem;
+  background: var(--ink);
+}
+
+.section-nav a.is-active {
   color: var(--ink-bright);
 }
 
 .section-nav a.is-active .bar,
-.section-nav a:hover .bar {
+.section-nav a.is-active:hover .bar,
+.section-nav a.is-active:focus-visible .bar {
   width: 4rem;
-  background: var(--ink-bright);
+  background: var(--accent);
+}
+
+.section-nav a.is-active:hover,
+.section-nav a.is-active:focus-visible {
+  color: var(--ink-bright);
 }
 
 .socials {
@@ -306,10 +326,10 @@ ul {
 
 .card:hover,
 .card:focus-within {
-  background: rgba(148, 163, 184, 0.05);
+  background: rgba(224, 164, 90, 0.05);
   border-color: var(--line);
-  box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.08),
-    inset 0 1px 0 0 rgba(148, 163, 184, 0.08);
+  box-shadow: 0 0 0 1px rgba(224, 164, 90, 0.08),
+    inset 0 1px 0 0 rgba(236, 230, 220, 0.06);
 }
 
 .when {
@@ -358,6 +378,36 @@ ul {
   color: var(--muted);
 }
 
+.card:not(.is-open) ul.details li:nth-child(n + 5) {
+  display: none;
+}
+
+.more {
+  position: relative;
+  z-index: 2;
+  display: none;
+  margin-top: 0.85rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card.has-more .more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.more:hover,
+.more:focus-visible {
+  color: var(--accent);
+}
+
 .pills {
   display: flex;
   flex-wrap: wrap;
@@ -376,13 +426,9 @@ ul {
 }
 
 .card-link {
+  position: relative;
+  z-index: 1;
   color: inherit;
-}
-
-.card-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
 }
 
 .card h3 .arrow {
@@ -490,9 +536,9 @@ ul {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding: 1rem 1.5rem;
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(22, 19, 17, 0.88);
     backdrop-filter: blur(12px);
-    box-shadow: 0 1px 0 0 rgba(148, 163, 184, 0.08);
+    box-shadow: 0 1px 0 0 rgba(236, 230, 220, 0.08);
   }
 
   .card {
