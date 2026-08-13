@@ -53,18 +53,18 @@
               <h3>Kouano</h3>
               <p class="job__role">AI Engineer Intern · Calgary</p>
               <ul>
-                <li>Built and shipped an open-weight music generation platform end-to-end: creator studio UI, marketing surface, and a public REST API sharing one inference engine.</li>
-                <li>Implemented the ACE-Step DiT serving stack with a model registry (turbo / SFT / base + 0.6B lyric LM), FP8 weight-only quantization, compiled kernels, concurrency/queue controls, and health/readiness reporting.</li>
-                <li>Shipped compose generation with prompt + optional lyrics (null triggers CoT lyric writing), instrumental mode, duration up to 4 minutes, CFG/steps controls, and seed-reproducible multi-take output.</li>
-                <li>Engineered a best-of-N CLAP quality gate that over-generates takes, scores and reranks them, discards weak variants, and returns winners with CLAP scores, LUFS, timings, and SLA flags.</li>
-                <li>Added a lyric integrity loop with optional ASR verification so vocal takes actually sing the provided lyrics before they pass the gate.</li>
-                <li>Shipped M2 editing complexity: cover/remix, time-bounded section repaint with latent and WAV crossfades, worker extend, and multi-hop async orchestrated extend with overlap stitching so tracks truly lengthen.</li>
-                <li>Integrated multi-engine stem separation (MelBand-RoFormer / BS-RoFormer with Demucs fallback), instrumental stem fetch, and Studio stems.zip export for vocals, drums, bass, synths, FX, and master.</li>
-                <li>Built provenance and ownership primitives: per-track records of models, settings, and exact seeds; inaudible watermark; commercial-ready MP3/WAV export; open-weight self-host path so prompts stay private.</li>
+                <li>Shipped an open-weight, API-first music generation product end-to-end: creator studio (Create → Generating → Result → Editor), dual-audience marketing surface, and an 18-endpoint OpenAPI 3.1 REST API so the same engine powers the app and third-party integrations.</li>
+                <li>Served ACE-Step DiT in production (turbo / SFT / base plus a 0.6B lyric LM) with FP8 weight-only quantization and compiled kernels, targeting a finished 48 kHz stereo master in under 10 seconds on the Quick path and a 15s compose SLA — vs. typical multi-minute waits on closed music-gen APIs.</li>
+                <li>Built compose generation for 10–240s songs (4 min Turbo cap) across 50+ languages, with 16 BPM-conditioned genre presets, 5 lyric structure templates (instrumental through verse / pre-chorus / chorus / bridge / outro), CoT lyric writing when lyrics are omitted, and seed-reproducible multi-take output (take i = seed+i).</li>
+                <li>Engineered a CLAP best-of-N quality gate that generates n+overgenerate takes (default 2 kept + 1 discarded; up to 4 kept + 3 extra), reranks by CLAP, and returns winners with scores, LUFS, per-stage timings, and an sla_met flag — cutting weak takes before users ever hear them.</li>
+                <li>Added default-on ASR lyric verification (word-overlap bar ~0.20) that regenerates until n takes actually sing the prompt, with duration-scaled retry caps (12 / 6 / 6 for short / mid / long, max 16) so vocal tracks fail closed instead of shipping mismatched lyrics.</li>
+                <li>Shipped M2 editing: cover/remix, time-bounded section repaint (10-frame latent + 0.05s WAV crossfades, 2s context), worker extend, and multi-hop async orchestrated extend with 4s overlap stitching so tracks truly lengthen instead of turbo-repainting in place — non-destructive, with version history.</li>
+                <li>Upgraded stem separation to a live MelBand-RoFormer engine (Kim FT checkpoint) with BS-RoFormer secondary and Demucs fallback, exposing instrumental fetch plus a 6-stem Studio ZIP (vocals, drums, bass, synths, FX, master) for DAW handoff.</li>
+                <li>Designed ownership and trust into the product: per-track provenance (models, settings, exact seed), inaudible watermark, unlocked 320 kbps MP3 and 48 kHz WAV exports, prompts never used as training data, and an open-weight self-host / white-label path (99.9% uptime target on the hosted API) so teams can run inference on their own GPUs.</li>
               </ul>
               <div class="keywords">
                 <p class="keywords__label">Keywords</p>
-                <span>Python</span><span>REST / OpenAPI</span><span>ACE-Step</span><span>DiT</span><span>CLAP</span><span>ASR</span><span>RoFormer</span><span>Demucs</span><span>Web Audio</span><span>React</span><span>GPU Inference</span><span>FP8</span><span>Async Jobs</span>
+                <span>Python</span><span>REST / OpenAPI</span><span>ACE-Step</span><span>DiT</span><span>CLAP</span><span>ASR</span><span>MelBand-RoFormer</span><span>Demucs</span><span>Web Audio</span><span>React</span><span>GPU Inference</span><span>FP8</span><span>Async Jobs</span><span>LUFS</span>
               </div>
             </div>
           </article>
