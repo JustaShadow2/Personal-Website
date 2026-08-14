@@ -1,150 +1,389 @@
 <!doctype html>
 <html lang="en">
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="img/favicon.png" type="image/png">
-<title>Arjun Atwal - My Website</title>
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="vendors/linericon/style.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-
-<link rel="stylesheet" href="css/style.css">
-<script nonce="9ebdefb9-1768-4dcf-8255-781922e3f9c0">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Arjun Atwal</title>
+  <meta name="description" content="Arjun Atwal — software engineer building production systems across payments, biotech, geospatial, and generative AI.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+  <a class="skip" href="#content">Skip to content</a>
 
-<header class="header_area">
-<div class="main_menu">
-<nav class="navbar navbar-expand-lg navbar-light">
-<div class="container">
+  <div class="shell">
+    <header class="intro">
+      <div>
+        <h1>Arjun Atwal</h1>
+        <p class="role">AI Engineer Intern</p>
+        <p class="lede">I build production systems that hold under pressure — payments, biotech tooling, geospatial pipelines, and generative audio.</p>
+        <nav class="section-nav" data-section-nav aria-label="Page sections">
+          <a href="#about" class="is-active" aria-current="true"><span class="bar" aria-hidden="true"></span>About</a>
+          <a href="#experience"><span class="bar" aria-hidden="true"></span>Experience</a>
+          <a href="#projects"><span class="bar" aria-hidden="true"></span>Projects</a>
+          <a href="#skills"><span class="bar" aria-hidden="true"></span>Skills</a>
+          <a href="#contact"><span class="bar" aria-hidden="true"></span>Contact</a>
+        </nav>
+      </div>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/JustaShadow2" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.3 4.3 0 0 1 .1-3.2s1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C16.8 4.7 17.8 5 17.8 5c.5 1.3.2 2.3.1 3.2a4.7 4.7 0 0 1 1.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/arjun-atwal-852a90241/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5v-9h3ZM6.5 8.4A1.7 1.7 0 1 1 8.2 6.7 1.7 1.7 0 0 1 6.5 8.4ZM19 19h-3v-4.7c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V19H9v-9h2.9v1.3a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/JustaShadow2/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 3.2 7.4 9.3a4.2 4.2 0 0 0 0 5.9l6.1 6.1 1.6-1.6-6.1-6.1a2 2 0 0 1 0-2.8l6.1-6.1Zm2.8 4.5-3.4 3.4 1.5 1.5 2.2-2.2 2.7 2.7-1.5 1.5 3.4 3.4 1.5-1.5-3.4-3.4 1.5-1.5-4.5-4.4Zm-8.2.7L4.6 12l3.5 3.6L6.6 17 2 12.4v-.8L6.6 7Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:atwalarjun@icloud.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </header>
 
-<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" height="50px"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+    <main class="content" id="content">
+      <section class="section about" id="about" data-section>
+        <p class="section-label">About</p>
+        <p>I’m an Honors Computer Science student at Western University (graduating May 2027). I care about systems that are measurable, resilient, and honest about their constraints. I build software you can test, ship, and still understand six months later.</p>
+        <p>Currently I’m an AI Engineer Intern at Kouano in Calgary, building open-weight music generation: inference, quality gating, editing, stems, and a public REST API. Before that I interned at RBC on global and domestic payment processing, BioAro on full-stack biotech features, SteepDeep on geospatial pipelines, Ribbon on React UI, and the Government of Ontario on reporting and live maps.</p>
+        <p>Outside internships I build things like PokeQuant (TCG market analytics) and ship hackathon/course systems across ML, computer vision, and full-stack product work.</p>
+        <a class="resume-link" href="files/Arjun_Atwal_Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Résumé <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </section>
 
-<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-<ul class="nav navbar-nav menu_nav justify-content-end">
-<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-<!--<li class="nav-item submenu dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-<ul class="dropdown-menu">
-<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-</ul>
-</li>-->
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</div>
-</header>
+      <section class="section" id="experience" data-section>
+        <p class="section-label">Experience</p>
+        <div class="card-list">
+        <article class="card">
+          <p class="when">May 2026 — Present</p>
+          <div>
+            <h3>AI Engineer Intern · <span class="place">Kouano</span></h3>
+            <p>Open-weight, API-first music generation — creator studio, inference stack, and an 18-endpoint OpenAPI REST surface on one engine.</p>
+            <ul class="details">
+              <li>Shipped the product end-to-end: creator studio (Create → Generating → Result → Editor), dual-audience marketing surface, and an 18-endpoint OpenAPI 3.1 REST API so the same engine powers the app and third-party integrations.</li>
+              <li>Served ACE-Step DiT in production (turbo / SFT / base plus a 0.6B lyric LM) with FP8 weight-only quantization and compiled kernels: 48 kHz stereo masters in under 10 seconds on Quick, 15s compose SLA.</li>
+              <li>Engineered a CLAP best-of-N quality gate (default generate 3 / keep 2; up to 4 kept + 3 extra) that reranks takes by CLAP and returns winners with scores, LUFS, per-stage timings, and an sla_met flag — weak takes never ship.</li>
+              <li>Added default-on ASR lyric verification (~0.20 word-overlap) that regenerates until n takes actually sing the prompt, with duration-scaled retry caps (12 / 6 / 6 for short / mid / long, max 16).</li>
+              <li>Compose for 10–240s songs (4 min Turbo cap) across 50+ languages, with 16 BPM-conditioned genre presets, 5 lyric structure templates, CoT lyric writing when lyrics are omitted, and seed-reproducible multi-take output (take i = seed+i).</li>
+              <li>Shipped M2 editing: cover/remix, time-bounded section repaint (10-frame latent + 0.05s WAV crossfades, 2s context), and multi-hop async extend with 4s overlap stitching — non-destructive, with version history.</li>
+              <li>Live MelBand-RoFormer stems (Kim FT checkpoint) with BS-RoFormer secondary and Demucs fallback; instrumental fetch plus a 6-stem Studio ZIP (vocals, drums, bass, synths, FX, master) for DAW handoff.</li>
+              <li>Per-track provenance (models, settings, exact seed), inaudible watermark, unlocked 320 kbps MP3 and 48 kHz WAV, prompts never used as training data, and an open-weight self-host / white-label path with a 99.9% uptime target on the hosted API.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>OpenAPI</li><li>ACE-Step</li><li>DiT</li><li>CLAP</li><li>ASR</li><li>MelBand-RoFormer</li><li>FP8</li><li>React</li>
+            </ul>
+          </div>
+        </article>
 
-<section class="home_banner_area">
-<div class="banner_inner">
-<div class="container">
-<div class="row">
-<div class="col-lg-7">
-<div class="banner_content">
-<h3 class="text-uppercase">Hell0</h3>
-<h1 class="text-uppercase">my name is arjun </h1>
-<h5 class="text-uppercase">junior developer</h5>
-<div class="d-flex align-items-center">
-<a class="primary_btn tr-bg" href="https://drive.google.com/file/d/1QllAcFoBXxh9CFQI2lNVg9tNVaWUW77Q/view?usp=sharing" download="ArjunAtwalResume"><span>Resume</span></a>
-</div>
-</div>
-</div>
-<div class="col-lg-5">
-<div class="home_right_img">
-<img src="img/home-right.png" height="500px">
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <article class="card">
+          <p class="when">Jan — May 2026</p>
+          <div>
+            <h3>Software Engineer Intern · <span class="place">Royal Bank of Canada</span></h3>
+            <p>Global remittance payments — automated testing and an Interac stub so pre-prod no longer waited on a live rail.</p>
+            <ul class="details">
+              <li>Designed and implemented a scalable automated testing framework for global remittance payment systems, covering end-to-end validation across 12 APIs and removing manual pre-production test work that previously gated releases.</li>
+              <li>Built a high-fidelity Interac bulk-payment stub that simulated the full async contract — ACKs, reports, and responses — so QA and developers no longer blocked on the live Interac service (up to ~5 minutes per round-trip).</li>
+              <li>Wired the automated suites into GitHub Actions for continuous regression on every commit, raising deployment confidence and shrinking the window where defects escaped to post-release.</li>
+              <li>Cut the remittance inner loop from waiting on an external payment rail to near-instant local runs of the same workflows.</li>
+              <li>Worked in a Kanban delivery cadence with stand-ups and backlog refinement alongside senior engineers, keeping the stub, suites, and CI path in the same continuous-delivery stream as the remittance services.</li>
+            </ul>
+            <ul class="pills">
+              <li>Java</li><li>Karate</li><li>GitHub Actions</li><li>Interac</li><li>API Testing</li><li>CI/CD</li>
+            </ul>
+          </div>
+        </article>
 
+        <article class="card">
+          <p class="when">May — Oct 2025</p>
+          <div>
+            <h3>Software Engineer Intern · <span class="place">BioAro</span></h3>
+            <p>Full-stack precision-health product work — Laravel, REST, SQL, and ML that actually ran in the app.</p>
+            <ul class="details">
+              <li>Shipped production full-stack features in Laravel and REST over a 6-month internship, improving responsiveness and scaling user interactions across core precision-health workflows rather than one-off prototypes.</li>
+              <li>Designed and optimized backend services and SQL so production reads stayed efficient as datasets grew — indexing and query shape work aimed at retrieval cost, not just feature completeness.</li>
+              <li>Built ML pipelines through the full loop — preprocessing, training, evaluation, then wiring the resulting model into application workflows — so models left the notebook and ran behind live product paths.</li>
+              <li>Raised release reliability by adding unit, API, and integration tests across the stack, catching defects before they reached pre-release.</li>
+            </ul>
+            <ul class="pills">
+              <li>Laravel</li><li>PHP</li><li>REST</li><li>SQL</li><li>Python</li><li>Machine Learning</li>
+            </ul>
+          </div>
+        </article>
 
-<section class="about_area section_gap">
-<div class="container">
-<div class="row justify-content-start align-items-center">
-<div class="col-lg-5">
-<div class="about_img">
-<img class="" src="img/about-us.png" height="500px">
-</div>
-</div>
-<div class="offset-lg-1 col-lg-5">
-<div class="main_title text-left">
-<h2>Hello, let me introduce myself!</h2>
-<p>
-I'm Arjun Atwal, a <span style="font-weight: bold;">Third Year Computer Science and Math</span> student at the University of Western Ontario.
-</p>
-<p>
-I am seeking <span style="font-weight: bold;">Programming Focused</span> internship positions. 
-I have relevant skills in <span style="font-weight: bold;">Software Development</span> from projects 
-and <span style="font-weight: bold;">work experience</span> from my internship at
-<span style="font-weight: bold;">Ontario Government and Ribbon.ai</span>
-</p>
-<a class="primary_btn" href="portfolio.html"><span>Project Portfolio</span></a>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <article class="card">
+          <p class="when">May — Sep 2024</p>
+          <div>
+            <h3>Software Engineer Intern · <span class="place">SteepDeep</span></h3>
+            <p>Geospatial publishing — raw imagery to live maps without the manual hand-off.</p>
+            <ul class="details">
+              <li>Built a Python map-generation pipeline that turned raw image assets into optimized tilesets for interactive mapping apps.</li>
+              <li>Integrated the Mapbox API to upload, process, and manage geospatial data so rendering could scale with asset volume instead of one-off Studio uploads.</li>
+              <li>Automated publishing to AWS S3 so tileset deployment was no longer a copy/paste ops task.</li>
+              <li>Cut manual overhead and shortened the path from new imagery to a live map.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>Mapbox</li><li>AWS S3</li><li>Tilesets</li><li>Geospatial</li>
+            </ul>
+          </div>
+        </article>
 
-<section class="features_area">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8 text-center">
-<div class="main_title">
-<h2>Skills and areas of interest</h2>
-<p>
-Overview of some of the tech stacks I have worked with<br>Including their applications and my areas of interest
-</p>
-</div>
-</div>
-</div>
-<div class="row feature_inner">
-<div class="col-lg-3 col-md-6">
-<div class="feature_item">
-<img src="img/computerscreen.png" height="50px" width="100px">
-<h4>Frontend Development<br></br></h4>
-<br><p>React.js<br>Express.js<br>Tailwind CSS</p>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="feature_item">
-<img src="img/gears.png" height="50px">
-<h4>Backend Development<br></br></h4>
-<br><p>Flask<br>Node.js<br>MongoDB</p>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="feature_item">
-<img src="img/ai.png" height="50px">
-<h4>AI - CV and NLP<br></br></h4>
-<br><p>OpenCV<br>GPT - 3<br>TensorFlow<br>PyTorch</p>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="feature_item">
-<img src="img/niche.png" height="50px" width="200">
-<h4>Database Management Systems</h4>
-<p>SQL<br>XML<br>XSLT<br></p><br>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <article class="card">
+          <p class="when">Jan — May 2024</p>
+          <div>
+            <h3>Software Engineer Intern · <span class="place">Ribbon Business</span></h3>
+            <p>React UI for financial-calculator and related flows, iterated with design instead of after ship.</p>
+            <ul class="details">
+              <li>Built and prototyped React UI components for end-to-end feature development.</li>
+              <li>Shipped financial-calculator surfaces as part of that UI work, not as a throwaway mock.</li>
+              <li>Worked in short Figma → React cycles so UX issues were caught in component form instead of after a full-page ship.</li>
+              <li>Landed product changes as reusable pieces rather than one-off markup, improving consistency across the calculator and related flows.</li>
+            </ul>
+            <ul class="pills">
+              <li>React</li><li>JavaScript</li><li>HTML/CSS</li><li>Figma</li>
+            </ul>
+          </div>
+        </article>
 
+        <article class="card">
+          <p class="when">May — Sep 2023</p>
+          <div>
+            <h3>Software Engineer Intern · <span class="place">Government of Ontario</span></h3>
+            <p>Field-officer reporting and a live map instead of static location checks.</p>
+            <ul class="details">
+              <li>Extended XML/XSLT pipelines on field-officer reporting systems.</li>
+              <li>Generated reports could take new fields and layouts without a full rewrite of the reporting stack.</li>
+              <li>Built an interactive Mapbox geospatial view that plotted officer locations in real time.</li>
+              <li>Replaced static, report-only location checks with a live map operators could watch during a shift.</li>
+            </ul>
+            <ul class="pills">
+              <li>XML</li><li>XSLT</li><li>Mapbox</li><li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" data-section>
+        <p class="section-label">Projects</p>
+        <div class="card-list">
+        <article class="card" id="pokequant">
+          <p class="when">2025</p>
+          <div>
+            <h3>PokeQuant</h3>
+            <p>Quantitative Pokemon TCG analytics — fair value, demand, grading ROI, and sealed tracking across TCGPlayer and eBay.</p>
+            <ul class="details">
+              <li>Built multi-source price history across TCGPlayer market prices and eBay raw / PSA 9 / PSA 10 smart prices, plus volume views for TCGPlayer sales and 7-day PSA 10 eBay volume.</li>
+              <li>Implemented ML fair-value predictions per card with predicted price, 90% confidence interval, UNDERVALUED / FAIR VALUE / OVERVALUED signal, confidence tier, and ratio versus live market.</li>
+              <li>Engineered demand scoring as a 0–10 composite from search interest and 14-day / 30-day price momentum, filterable and rankable in the UI.</li>
+              <li>Computed PSA 10 grading ROI as smart graded price divided by raw eBay price, with confidence tied to sold-listing sample size.</li>
+              <li>Designed a snapshot data model for prices, eBay graded metrics, sales, demand signals, sealed products, and versioned model_predictions to keep nightly refreshes reproducible.</li>
+              <li>Shipped leaderboards ranking cards by momentum, PSA 10 ROI, and sales volume; sets by premium metrics and 30-day movement; sealed booster boxes, ETBs, and packs by price and change.</li>
+            </ul>
+            <ul class="pills">
+              <li>TypeScript</li><li>Next.js</li><li>React</li><li>SQL</li><li>Postgres</li><li>ML</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="ai-chef">
+          <p class="when">Nov 2024</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://arjun-atwal.me/projects/chef-ai/" target="_blank" rel="noopener noreferrer">AI-Chef <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>DataSci 3000: nonlinear regression predicts a Freshness Index, then Groq recipes bias toward what expires first.</p>
+            <ul class="details">
+              <li>Fitted sigmoid decay models with SciPy curve_fit to map days → perceived freshness across observed spoil curves.</li>
+              <li>Compared steep vs non-steep nonlinear regression formulations and validated against held-out CSV test sets in a shared data schema.</li>
+              <li>Wired Freshness Index outputs into Groq-backed recipe generation so suggestions bias toward ingredients that expire soonest.</li>
+              <li>Packaged training/evaluation notebooks plus data-formatting utilities for reproducible experiments.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>NumPy</li><li>SciPy</li><li>Jupyter</li><li>Groq</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="trivia-trials">
+          <p class="when">Apr 2024</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://github.com/JustaShadow2/Trivia-Trials" target="_blank" rel="noopener noreferrer">Trivia Trials <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>CS 2212 board trivia — timed rounds, multiplayer, instructor hooks, MongoDB persistence.</p>
+            <ul class="details">
+              <li>Built the board gameplay loop in Python with pygame / pygame-gui: timed rounds, streak scoring, and progressive difficulty.</li>
+              <li>Implemented question generation and query management modules with unit tests for core board and generation logic.</li>
+              <li>Integrated MongoDB for high scores, player profiles, save files, and developer/debug mode features.</li>
+              <li>Designed for classroom use with instructor visibility into learning progress and a maintainable debug surface for future contributors.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>pygame</li><li>MongoDB</li><li>unittest</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="git-together">
+          <p class="when">Nov 2023</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://github.com/JustaShadow2/Git-Together" target="_blank" rel="noopener noreferrer">GitTogether <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>Hack Western: applicant–company matching with profiles, snippets, likes, and recruiter flows.</p>
+            <ul class="details">
+              <li>Built React frontend flows for auth, landing, account pages, code-snippet tagging, and recruiter matching views with React Router and MUI.</li>
+              <li>Implemented Flask backend endpoints for signup/login, company profiles, applicant profiles, likes, and logo/resume uploads.</li>
+              <li>Used MongoDB via PyMongo for profile and match state, with bcrypt password hashing and CORS-enabled API access.</li>
+              <li>Added email/notification integration hooks (Infobip) for outreach around matches and account events.</li>
+            </ul>
+            <ul class="pills">
+              <li>React</li><li>Flask</li><li>MongoDB</li><li>MUI</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="sudoku-solver">
+          <p class="when">Nov 2023</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://arjun-atwal.me/projects/sudoku-solver/" target="_blank" rel="noopener noreferrer">Computer Vision Sudoku Solver <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>Find a board in a photo, OCR the digits, backtrack the grid.</p>
+            <ul class="details">
+              <li>Used OpenCV for bilateral filtering, Canny edges, contour detection, and perspective warps to isolate the board.</li>
+              <li>Split boards into 81 normalized cells and classified digits with a Keras OCR model.</li>
+              <li>Implemented constraint-validating backtracking to fill the extracted board.</li>
+              <li>Mapped solved grids back into image space so the original photo shows the completed puzzle.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>OpenCV</li><li>Keras</li><li>OCR</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="study-squid">
+          <p class="when">Jan 2023</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://devpost.com/software/study-squid" target="_blank" rel="noopener noreferrer">Study Squid <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>QHacks: unlimited practice problems, live checking, XP/levels.</p>
+            <ul class="details">
+              <li>Wrote Python generators for calculus and linear algebra problem sets.</li>
+              <li>Served them through a Flask backend into a vanilla HTML/JS frontend.</li>
+              <li>Integrated Wolfram for solution verification and step-style feedback.</li>
+              <li>Added subject selection, multi-unit mixing for exam prep, and an XP/leveling loop to make practice sticky.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>Flask</li><li>JavaScript</li><li>Wolfram API</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="bon-voyage">
+          <p class="when">Jan 2023</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://devpost.com/software/adventure-explorer" target="_blank" rel="noopener noreferrer">Bon Voyage <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>UofTHacks travel planner: Yelp + Google Maps + GPT-3 itineraries.</p>
+            <ul class="details">
+              <li>Built a Flask + HTML/Bootstrap app that accepts origin/destination and returns a structured trip plan.</li>
+              <li>Parsed Yelp reviews to surface high-rated attractions.</li>
+              <li>Rendered routes with Google Maps, including flight-aware pathing experiments.</li>
+              <li>Generated custom 3-day itineraries with the GPT-3 API and stitched the three API surfaces into one end-to-end planner.</li>
+            </ul>
+            <ul class="pills">
+              <li>Python</li><li>Flask</li><li>GPT-3</li><li>Yelp API</li><li>Google Maps</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="roadmap-ai">
+          <p class="when">Jan 2023</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://devpost.com/software/roadmap-ai" target="_blank" rel="noopener noreferrer">roadmap.ai <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>DeltaHacks: GPT-3 turns a goal into ordered steps.</p>
+            <ul class="details">
+              <li>Integrated the GPT-3 API into a browser UI so users can enter a goal and receive ordered execution steps.</li>
+              <li>Worked through JS ↔ API integration around request handling and prompt formatting.</li>
+              <li>Kept the core loop as prompt in, roadmap out — a concrete plan instead of an open-ended chat.</li>
+              <li>Scoped follow-on ideas for schedule generation and timetable assignment on top of the roadmap core.</li>
+            </ul>
+            <ul class="pills">
+              <li>JavaScript</li><li>Node.js</li><li>GPT-3</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card" id="myapply">
+          <p class="when">Nov 2022</p>
+          <div>
+            <h3>
+              <a class="card-link" href="https://myapply-uajanth.vercel.app/" target="_blank" rel="noopener noreferrer">myApply <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </h3>
+            <p>Hack Western: recruiter outreach by field of study.</p>
+            <ul class="details">
+              <li>Built the Next.js frontend for browsing companies and recruiter contacts by field of study.</li>
+              <li>Implemented a Flask backend for sample data serving and SendGrid-powered mass email outreach.</li>
+              <li>Turned cold outreach into a structured, repeatable workflow instead of ad-hoc messages.</li>
+              <li>Aimed at first-year CS networking friction — getting a first recruiter conversation without a personal pipeline.</li>
+            </ul>
+            <ul class="pills">
+              <li>Next.js</li><li>React</li><li>Flask</li><li>SendGrid</li>
+            </ul>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" data-section>
+        <p class="section-label">Skills</p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="pills">
+              <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>C / C++</li><li>SQL</li><li>HTML/CSS</li><li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks &amp; libraries</h3>
+            <ul class="pills">
+              <li>React</li><li>Next.js</li><li>Flask</li><li>Laravel</li><li>Spring</li><li>NumPy</li><li>pandas</li><li>PyTorch</li><li>TensorFlow</li><li>OpenCV</li><li>Karate</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="pills">
+              <li>Git</li><li>GitHub Actions</li><li>AWS S3</li><li>Mapbox</li><li>MongoDB</li><li>Firebase</li><li>Postman</li><li>Jira</li><li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" data-section>
+        <p class="section-label">Contact</p>
+        <p>Open to software engineering roles.</p>
+        <p>Backend, platform, ML infrastructure, and product engineering.</p>
+        <div class="contact-lines">
+          <a href="mailto:atwalarjun@icloud.com">atwalarjun@icloud.com</a>
+          <a href="tel:+16479812705">+1 (647) 981-2705</a>
+        </div>
+        <a class="resume-link" href="files/Arjun_Atwal_Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Résumé <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <p class="note">Built as a single-page résumé. © <span data-year></span> Arjun Atwal</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/site.js"></script>
 </body>
 </html>
