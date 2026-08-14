@@ -1,3 +1,3 @@
 # Personal Website
 
-Modern personal site for Arjun Atwal — experience, projects, and contact.
+Modern personal site, experience, projects, and contact.
